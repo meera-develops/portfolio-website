@@ -1,23 +1,32 @@
 import './App.css'
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate
+} from "react-router-dom";
+import Home from "./pages/home";
+import Projects from "./pages/Projects";
 
 function App() {
 
   return (
     <>
       <div>
-        {/* <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a> */}
+        <Router>
+          <Routes>
+
+            <Route
+            exact path="/"
+            element={<Home />} />
+
+            <Route 
+            path="/Projects"
+            element={<Projects />} />
+
+          </Routes>
+        </Router>
       </div>
-      <h1>My App</h1>
-      <div className="card">
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
   )
 }
