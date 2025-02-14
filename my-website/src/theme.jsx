@@ -1,5 +1,5 @@
 import { createTheme, ThemeProvider } from '@mui/material/styles'; 
-import TekturTtf from './assets/fonts/tektur-variable.ttf';
+// import TekturTtf from './assets/fonts/tektur-variable.ttf';
 
 const theme = createTheme({
     palette: {
@@ -20,14 +20,16 @@ const theme = createTheme({
         }
     },
     typography: {
-        fontFamily: 'Tektur',
-        fontWeightRegular: 400,
-        fontWeightMedium: 500,
-        fontWeightSemiBold: 600,
-        fontWeightBold: 700,
-        fontWeightExtraBold: 800,
-        fontWeightBlack: 900,
-
+        fontFamily: "'Josefin Sans', sans-serif",
+        h1: {
+            fontFamily: 'Tektur',
+        },
+        body1: {
+            fontFamily: 'Tektur',
+        },
+        body2: {
+            fontFamily: 'Josefin Sans',
+        }
     },
 });
 

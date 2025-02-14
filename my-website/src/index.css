@@ -17,6 +17,11 @@
   src: url('/src/assets/fonts/tektur-variable.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: "Josefin Sans";
+  src: url('/src/assets/fonts/JosefinSans-VariableFont_wght.ttf') format('truetype');
+}
+
 a {
   font-weight: 500;
   color: #646cff;
@@ -27,6 +32,7 @@ a:hover {
 }
 
 body {
+  font-family: 'Josefin San';
   margin: 0;
   display: flex;
   place-items: center;

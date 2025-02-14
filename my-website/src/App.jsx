@@ -23,7 +23,7 @@ function App() {
         <h3 style={{ fontFamily: 'Tektur' }}>This is a demonstration of the special font</h3>
         <ThemeProvider theme={theme}>
           <h1>Welcome to my project!</h1>
-          <h3>This is another example</h3>
+          <Typography variant="body2">This is another example</Typography>
         </ThemeProvider>
 
           {/* <Router>
