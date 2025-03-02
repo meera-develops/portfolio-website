@@ -3,7 +3,8 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
-  Navigate
+  Navigate,
+  Link
 } from "react-router-dom";
 import Home from "./pages/home/home";
 import Projects from "./pages/projects/Projects";
