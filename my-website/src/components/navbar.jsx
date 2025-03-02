@@ -1,42 +1,58 @@
-// import React, {useState} from "react";
-// import { AppBar, Toolbar, Typography, Button, Box } from '@mui/material';
-// import {
-//     BrowserRouter as Router,
-//     Routes,
-//     Route,
-//     Navigate
-//   } from "react-router-dom";
-//   import Home from "./pages/home";
-//   import Projects from "./pages/Projects";
-//   import { ThemeProvider } from '@mui/material/styles';
-//   import theme from './theme';
+import React, {useState, MouseEvent} from 'react';
+import { AppBar, Toolbar, Typography, IconButton, Box, Button, Menu, MenuList, MenuItem } from '@mui/material';
+import { AccessAlarm } from '@mui/icons-material';
+import MenuIcon from '@mui/icons-material/Menu';
 
-// function navbar() {
 
-//     return (
-//         <>
-//         <div>
-//             <navbar />
-//             <Router>
-//                 <Routes>
+const pages=['Projects', 'About', 'Resume', 'Contact'];
 
-//                 <Route
-//                 exact path="/"
-//                 element={<Home />} />
+function Navbar() {
+    const [anchorNav, setAnchorNav] = useState(null);
 
-//                 <Route 
-//                 path="/Projects"
-//                 element={<Projects />} />
+    const openMenu = (event) =>{
+        setAnchorNav(event.currentTarget);
+    };
+    const closeMenu =() =>{
+        setAnchorNav(null);
+    };
+    return (
+        <>
+            <AppBar position="static" width="100%">
+                <Toolbar>
+                    <IconButton size='large' edge='start' color='inherit' aria-label='logo' sx={{display:{xs:'none', md:'flex'}}}>
+                            <AccessAlarm />
+                    </IconButton>
+                    <Typography variant="h1" component="div" sx={{ flexGrow: 1, display:{xs:'none', md:'flex'} }}>
+                        Hiii
+                    </Typography>
+                    <Box sx={{display:{xs:'none', md:'flex'}}}>
+                        {pages.map((page)=>(
+                            <Button color='inherit' key={page}>{page}</Button>
+                        ))}
+                    </Box>
 
-//                 </Routes>
-//           </Router>
-//         </div>
+                    <Box sx={{display:{xs:'flex', md:'none'}}}>
+                        <IconButton size='large' edge='start' color='inherit' onClick={openMenu}>
+                            <MenuIcon />
+                        </IconButton>
+                        <Menu anchorEl={anchorNav} open={Boolean(anchorNav)} onClick={closeMenu} sx={{display:{xs:'flex', md:'none'}}}>
+                            {pages.map((page)=>(
+                                <MenuItem key={page}>{page}</MenuItem>
+                            ))}
+                        </Menu>
+                    </Box>
+                    <IconButton size='large' edge='start' color='inherit' aria-label='logo' sx={{display:{xs:'flex', md:'none'}}}>
+                            <AccessAlarm />
+                    </IconButton>
+                    <Typography variant="h1" component="div" sx={{ flexGrow: 1, display:{xs:'flex', md:'none'} }}>
+                        Hiii
+                    </Typography>
+                </Toolbar>
+
+            </AppBar>
         
-        
-//         </>
-//     )
+        </>
+    )
+}
 
-
-// }
-
-// export default navbar;
+export default Navbar 

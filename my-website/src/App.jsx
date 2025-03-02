@@ -8,17 +8,15 @@ import {
 import Home from "./pages/home/home";
 import Projects from "./pages/projects/Projects";
 import About from "./pages/about/About";
-
-
-//import navbar from './components/navbar';
+import Navbar from "./components/navbar";
 
 function App() {
-  // develop navbar component and have it land you on the home page
 
   return (
     <>
       <div>
           <Router>
+            <Navbar />
             <Routes>
 
               <Route
