@@ -1,9 +1,10 @@
 import React, {useState, MouseEvent} from 'react';
-import { AppBar, Toolbar, Typography, IconButton, Box, Button, Menu, MenuList, MenuItem } from '@mui/material';
-import { AccessAlarm } from '@mui/icons-material';
+import { AppBar, Toolbar, Typography, IconButton, Box, Button, Menu, MenuItem } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import { Link } from 'react-router-dom';
 import mb from '../assets/img/logo-mb.png';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 const pages=['Projects', 'About', 'Resume', 'Contact'];
 
@@ -20,10 +21,7 @@ function Navbar() {
         <>
             <AppBar position="static" width="100%">
                 <Toolbar>
-                    {/* <IconButton size='large' edge='start' color='inherit' aria-label='logo' sx={{display:{xs:'none', md:'flex'}}} component={Link} to='/'>
-                            <AccessAlarm />
-                    </IconButton> */}
-                    <Link to="/" sx={{display: {xs: 'none', md:'flex'}}}>
+                    <Link to="/" sx={{display: {xs: 'none', md:'flex'}}} aria-label='logo'>
                         <img
                         src={mb}
                         alt="pink circle logo with letters MB on it"
@@ -33,10 +31,37 @@ function Navbar() {
                     <Typography variant="h1" component="div" sx={{ flexGrow: 1, display:{xs:'none', md:'flex'} }}>
                         Hiii
                     </Typography>
-                    <Box sx={{display:{xs:'none', md:'flex'}}}>
+                    <Box sx={{display:{xs:'none', md:'flex', gap: 1}}}>
+                            <Button
+                                component="a"
+                                href="https://www.linkedin.com/in/meera-bhola/"
+                                target="_blank"
+                                color="inherit"
+                                sx={{ display: 'flex', alignItems: 'center '}}
+                                >
+                               <LinkedInIcon/> 
+                            </Button>
+                            <Button
+                                component="a"
+                                href="https://github.com/meera-develops"
+                                target="_blank"
+                                color="inherit"
+                                sx={{ display: 'flex', alignItems: 'center' }}
+                                >
+                                <GitHubIcon/>
+                            </Button>
                         {pages.map((page)=>(
                             <Button color='inherit' key={page} component={Link} to={`/${page.toLowerCase()}`}>{page}</Button>
                         ))}
+                        {/* <Button
+                            component="a"
+                            href="https://github.com/meera-develops"
+                            target="_blank"
+                            color="inherit"
+                            sx={{ display: 'flex', alignItems: 'center' }}
+                            >
+                            <GitHubIcon sx={{ marginRight: 1 }} />
+                        </Button> */}
                     </Box>
 
                     <Box sx={{display:{xs:'flex', md:'none'}}}>
@@ -49,9 +74,9 @@ function Navbar() {
                             ))}
                         </Menu>
                     </Box>
-                    <IconButton size='large' edge='start' color='inherit' aria-label='logo' sx={{display:{xs:'flex', md:'none'}}}>
+                    {/* <IconButton size='large' edge='start' color='inherit' aria-label='logo' sx={{display:{xs:'flex', md:'none'}}}>
                             <AccessAlarm />
-                    </IconButton>
+                    </IconButton> */}
                     <Typography variant="h1" component="div" sx={{ flexGrow: 1, display:{xs:'flex', md:'none'} }}>
                         Hiii
                     </Typography>
