@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 
 function Projects() {
     return (
@@ -7,14 +6,7 @@ function Projects() {
                 <h1>Projects: WELCOME!</h1>
             </div>
             <div>
-                <ul>
-                    <li>
-                        <Link to='/'>Home</Link>
-                    </li>
-                    <li>
-                        <Link to='/About'>About</Link>
-                    </li>
-                </ul>
+               
             </div>
         
         </>

@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import mb from '../assets/img/logo-mb.png';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import './navbar.css';
 
 const pages=['Projects', 'About', 'Resume', 'Contact'];
 
@@ -29,7 +30,7 @@ function Navbar() {
                         />
                     </Link>
                     <Typography variant="h1" component="div" sx={{ flexGrow: 1, display:{xs:'none', md:'flex'} }}>
-                        Hiii
+                        {/* empty field works to keep the links right-aligned */}
                     </Typography>
                     <Box sx={{display:{xs:'none', md:'flex', gap: 1}}}>
                             <Button
@@ -53,15 +54,6 @@ function Navbar() {
                         {pages.map((page)=>(
                             <Button color='inherit' key={page} component={Link} to={`/${page.toLowerCase()}`}>{page}</Button>
                         ))}
-                        {/* <Button
-                            component="a"
-                            href="https://github.com/meera-develops"
-                            target="_blank"
-                            color="inherit"
-                            sx={{ display: 'flex', alignItems: 'center' }}
-                            >
-                            <GitHubIcon sx={{ marginRight: 1 }} />
-                        </Button> */}
                     </Box>
 
                     <Box sx={{display:{xs:'flex', md:'none'}}}>
@@ -74,9 +66,6 @@ function Navbar() {
                             ))}
                         </Menu>
                     </Box>
-                    {/* <IconButton size='large' edge='start' color='inherit' aria-label='logo' sx={{display:{xs:'flex', md:'none'}}}>
-                            <AccessAlarm />
-                    </IconButton> */}
                     <Typography variant="h1" component="div" sx={{ flexGrow: 1, display:{xs:'flex', md:'none'} }}>
                         Hiii
                     </Typography>

@@ -1,5 +1,4 @@
-import './home.css'
-import { Link } from "react-router-dom";
+import './home.css';
 import { Typography } from '@mui/material';
 //import navbar component here
 
@@ -13,14 +12,7 @@ function Home() {
                 <h3 style={{ fontFamily: 'Tektur' }}>This is a demonstration of the special font</h3>
             </div>
             <div>
-                <ul>
-                    <li>
-                        <Link to="/Projects">Projects</Link>
-                    </li>
-                    <li>
-                        <Link to="/About">About</Link>
-                    </li>
-                </ul>
+                
             </div>
         
         
