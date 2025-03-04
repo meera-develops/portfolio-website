@@ -20,13 +20,14 @@ function Navbar() {
     };
     return (
         <>
-            <AppBar position="static" width="100%" sx={{ backgroundColor: 'transparent'}}>
+            <AppBar position="static" width="100%" sx={{ backgroundColor: 'transparent', marginTop: '3%'}}>
                 <Toolbar>
                     <Link to="/" sx={{display: {xs: 'none', md:'flex'}}} aria-label='logo'>
                         <img
                         src={mb}
                         alt="pink circle logo with letters MB on it"
-                        style={{ width: 125, height: 125}}
+                        style={{ width: 60, height: 60}}
+                        className='logo'
                         />
                     </Link>
                     <Box sx={{display:{xs:'none', md:'flex', gap: 1}, justifyContent: 'flex-end', width: '100%'}}>
@@ -87,12 +88,18 @@ function Navbar() {
                         </IconButton>
                         <Menu anchorEl={anchorNav} open={Boolean(anchorNav)} onClick={closeMenu} sx={{display:{xs:'flex', md:'none'}}}>
                             {pages.map((page)=>(
-                                <MenuItem key={page}>{page}</MenuItem>
+                                <MenuItem 
+                                key={page}
+                                sx={{
+                                    color: 'black',
+                                    fontWeight: 'bold'
+                                }}
+                                >{page}</MenuItem>
                             ))}
                         </Menu>
                     </Box>
-                    <Typography variant="h1" component="div" sx={{ flexGrow: 1, display:{xs:'flex', md:'none'} }}>
-                        Hiii
+                    <Typography variant="h5" component="div" sx={{ flexGrow: 1, display:{xs:'flex', md:'none'}, fontWeight: 'bold' }}>
+                        Meera's Portfolio
                     </Typography>
                 </Toolbar>
 

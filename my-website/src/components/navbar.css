@@ -29,3 +29,13 @@
     border-radius: 15px;
     margin-left: 2%;
 }
+
+.MuiAppBar-root .logo {
+    transition:  transform 0.3s ease;
+    transition: text-shadow 0.3s ease;
+}
+
+.MuiAppBar-root .logo:hover {
+    transform: scale(1.15); 
+    /* text-shadow: 0px 0px 40px rgba(185, 114, 187, 1), 0px 0px 50px rgba(185, 114, 187, 1);   */
+}
