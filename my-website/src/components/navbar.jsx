@@ -35,17 +35,30 @@ function Navbar() {
                                 href="https://www.linkedin.com/in/meera-bhola/"
                                 target="_blank"
                                 color="inherit"
-                                sx={{ display: 'flex', alignItems: 'center '}}
+                                sx={{ display: 'flex', 
+                                    alignItems: 'center ',
+                                    transition: 'all 0.3s ease', // Smooth transition for hover effect
+                                    '&:hover': {
+                                    transform: 'scale(1.2)',
+                                    },
+                                }}
 
                                 >
                                <LinkedInIcon fontSize="large"/> 
                             </Button>
+
                             <Button
                                 component="a"
                                 href="https://github.com/meera-develops"
                                 target="_blank"
                                 color="inherit"
-                                sx={{ display: 'flex', alignItems: 'center' }}
+                                sx={{ display: 'flex', 
+                                    alignItems: 'center',
+                                    transition: 'all 0.3s ease', // Smooth transition for hover effect
+                                    '&:hover': {
+                                    transform: 'scale(1.2)',
+                                    },
+                                }}
                                 >
                                 <GitHubIcon fontSize="large"/>
                             </Button>
