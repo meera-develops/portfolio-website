@@ -49,10 +49,13 @@ function Navbar() {
                                 >
                                 <GitHubIcon fontSize="large"/>
                             </Button>
-                        {pages.map((page)=>(
+                        {pages.map((page, index)=>(
                             <Button 
-                            color='inherit' 
-                            className="my-links" 
+                            className={
+                                index === pages.length - 1 ? 'last-page' 
+                                : index === pages.length - 2 ?
+                                'second-last-page' : 'my-links'
+                            }
                             key={page} 
                             sx={{
                                 transition: 'all 0.3s ease', // Smooth transition for hover effect

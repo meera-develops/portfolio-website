@@ -1,10 +1,31 @@
-/* * {
-    color: white;
-} */
+
 
 .MuiButton-root.my-links {
     font-family: 'Tektur';
     font-weight: 'bold';
     font-size: 1.5rem;
+    cursor: pointer;
+    color: white;
     
+}
+
+.MuiButton-root.second-last-page {
+    font-family: 'Tektur';
+    font-weight: 'bold';
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: white;
+}
+
+.MuiButton-root.last-page {
+    font-family: 'Tektur';
+    font-weight: 'bold';
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #683979;
+    /* display: inline-block; */
+    padding: 2px 15px;
+    background-color: #AEA5D4;
+    border-radius: 15px;
+    margin-left: 2%;
 }
