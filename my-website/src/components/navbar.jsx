@@ -20,25 +20,23 @@ function Navbar() {
     };
     return (
         <>
-            <AppBar position="static" width="100%">
+            <AppBar position="static" width="100%" sx={{ backgroundColor: 'transparent'}}>
                 <Toolbar>
                     <Link to="/" sx={{display: {xs: 'none', md:'flex'}}} aria-label='logo'>
                         <img
                         src={mb}
                         alt="pink circle logo with letters MB on it"
-                        style={{ width: 100, height: 100}}
+                        style={{ width: 125, height: 125}}
                         />
                     </Link>
-                    <Typography variant="h1" component="div" sx={{ flexGrow: 1, display:{xs:'none', md:'flex'} }}>
-                        {/* empty field works to keep the links right-aligned */}
-                    </Typography>
-                    <Box sx={{display:{xs:'none', md:'flex', gap: 1}}}>
+                    <Box sx={{display:{xs:'none', md:'flex', gap: 1}, justifyContent: 'flex-end', width: '100%'}}>
                             <Button
                                 component="a"
                                 href="https://www.linkedin.com/in/meera-bhola/"
                                 target="_blank"
                                 color="inherit"
                                 sx={{ display: 'flex', alignItems: 'center '}}
+
                                 >
                                <LinkedInIcon/> 
                             </Button>
