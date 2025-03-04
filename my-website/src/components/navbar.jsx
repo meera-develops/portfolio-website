@@ -7,6 +7,8 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import './navbar.css';
 
+//fix logo on mobile devices
+
 const pages=['Projects', 'About', 'Resume', 'Contact'];
 
 function Navbar() {
@@ -22,7 +24,7 @@ function Navbar() {
         <>
             <AppBar position="static" width="100%" sx={{ backgroundColor: 'transparent', marginTop: '3%'}}>
                 <Toolbar>
-                    <Link to="/" sx={{display: {xs: 'none', md:'flex'}}} aria-label='logo'>
+                    <Link to="/" sx={{display: {xs: 'none', sm: 'none', md:'flex'}}} aria-label='logo'>
                         <img
                         src={mb}
                         alt="pink circle logo with letters MB on it"
@@ -94,7 +96,7 @@ function Navbar() {
                                     color: 'black',
                                     fontWeight: 'bold'
                                 }}
-                                >{page}</MenuItem>
+                                component={Link} to={`/${page.toLowerCase()}`}>{page}</MenuItem>
                             ))}
                         </Menu>
                     </Box>
