@@ -38,7 +38,7 @@ function Navbar() {
                                 sx={{ display: 'flex', alignItems: 'center '}}
 
                                 >
-                               <LinkedInIcon/> 
+                               <LinkedInIcon fontSize="large"/> 
                             </Button>
                             <Button
                                 component="a"
@@ -47,10 +47,21 @@ function Navbar() {
                                 color="inherit"
                                 sx={{ display: 'flex', alignItems: 'center' }}
                                 >
-                                <GitHubIcon/>
+                                <GitHubIcon fontSize="large"/>
                             </Button>
                         {pages.map((page)=>(
-                            <Button color='inherit' key={page} component={Link} to={`/${page.toLowerCase()}`}>{page}</Button>
+                            <Button 
+                            color='inherit' 
+                            className="my-links" 
+                            key={page} 
+                            sx={{
+                                transition: 'all 0.3s ease', // Smooth transition for hover effect
+                                '&:hover': {
+                                textShadow: '0 0 40px rgba(185, 114, 187, 1), 0 0 50px rgba(185, 114, 187, 1)', // Glow effect on hover
+                                transform: 'scale(1.1)',
+                                },
+                            }}
+                            component={Link} to={`/${page.toLowerCase()}`}>{page}</Button>
                         ))}
                     </Box>
 
