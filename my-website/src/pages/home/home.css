@@ -1,4 +1,4 @@
-* {
+body {
     color: white;
 }
 
@@ -14,3 +14,19 @@
 .overlay2 {
     -webkit-text-stroke: 2px #B972BB;
 }
+
+/* .mouse-icons {
+    font-size: 200px;
+}
+
+.keyboard-icons {
+    font-size: 100px;
+}
+
+.screen-icons {
+    font-size: 5rem;
+}
+
+.web-icons {
+    font-size: 5rem;
+} */
