@@ -15,6 +15,9 @@ import KeyboardAltOutlinedIcon from "@mui/icons-material/KeyboardAltOutlined";
 import DesktopWindowsOutlinedIcon from "@mui/icons-material/DesktopWindowsOutlined";
 import LanguageOutlinedIcon from "@mui/icons-material/LanguageOutlined";
 
+//fix display on mobile
+//fix icons, background, and button 
+
 function Home() {
   return (
     <>
@@ -74,7 +77,9 @@ function Home() {
             </Grid2>
           </Grid2>
 
-          <Box sx={{ mt: 12 }}>
+          <Box sx={{ 
+            mt: { sm: 3, md: 4, lg: 7, xl: 12 } 
+            }}>
             <Grid2 container spacing={2} justifyContent="space-between">
               <Grid2
                 item
@@ -151,15 +156,15 @@ function Home() {
                 size="large"
                 className="button"
                 sx={{
-                  mt: 6,
-                  fontSize: "60px",
+                  mt:{ md: 3, lg: 6, xl: 9 }, 
+                  mb: 4,
+                  fontSize: { lg: '50px', xl: '60px'},
                   alignItems: "center",
                   fontFamily: "Tomorrow Medium",
                   color: "#fff",
                   justifyContent: "center",
                   backgroundColor: "#B972BB",
                   borderRadius: 5,
-                  position: "absolute",
                   left: "42%",
                   outline: "4px solid #fff",
                   transition: "all 0.4s ease",

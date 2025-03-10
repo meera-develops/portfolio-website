@@ -23,7 +23,8 @@ const theme = createTheme({
         fontFamily: "'Josefin Sans', sans-serif",
         h1: {
             fontFamily: 'Tektur',
-            // fontSize: '5rem'
+            fontSize: '5rem'
+            //make responsive font sizes here 
         },
         h3: {
             fontFamily: 'Tomorrow Medium'

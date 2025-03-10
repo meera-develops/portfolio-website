@@ -2,7 +2,9 @@
   background-image: url(./assets/img/bg-image.jpg);
   background-size: cover;
   background-position: cover;
-  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  background-repeat: repeat;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -44,8 +46,10 @@ a:hover {
   text-decoration: underline;
 }
 
-body {
+html, body {
   margin: 0;
+  padding: 0;
+  height: 100%;
 }
 
 h1 {
