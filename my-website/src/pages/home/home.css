@@ -1,3 +1,16 @@
 * {
     color: white;
 }
+
+.headshot {
+    max-width: 100%;
+    height: 'auto';
+}
+
+.overlay {
+    -webkit-text-stroke: 4px #B972BB;
+}
+
+.overlay2 {
+    -webkit-text-stroke: 2px #B972BB;
+}

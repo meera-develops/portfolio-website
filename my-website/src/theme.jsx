@@ -23,6 +23,7 @@ const theme = createTheme({
         fontFamily: "'Josefin Sans', sans-serif",
         h1: {
             fontFamily: 'Tektur',
+            // fontSize: '5rem'
         },
         h3: {
             fontFamily: 'Tomorrow Medium'
@@ -32,7 +33,7 @@ const theme = createTheme({
         },
         body2: {
             fontFamily: 'Josefin Sans',
-            fontSize: '1.1rem'
+            fontSize: '1.15rem'
         }
     },
 });
