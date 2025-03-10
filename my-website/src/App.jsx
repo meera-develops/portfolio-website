@@ -26,15 +26,15 @@ function App() {
               element={<Home />} />
 
               <Route 
-              path="/Projects"
+              path="/projects"
               element={<Projects />} />
 
               <Route
-              path="/About"
+              path="/about"
               element={<About />} />
 
               <Route
-              path="/Contact"
+              path="/contact"
               element={<Contact />} />
 
             </Routes>
