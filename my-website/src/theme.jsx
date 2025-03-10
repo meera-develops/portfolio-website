@@ -24,11 +24,15 @@ const theme = createTheme({
         h1: {
             fontFamily: 'Tektur',
         },
+        h3: {
+            fontFamily: 'Tomorrow Medium'
+        },
         body1: {
             fontFamily: 'Tektur',
         },
         body2: {
             fontFamily: 'Josefin Sans',
+            fontSize: '1.1rem'
         }
     },
 });

@@ -20,6 +20,21 @@
   src: url('/src/assets/fonts/JosefinSans-VariableFont_wght.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: "Tomorrow Black";
+  src: url('/src/assets/fonts/Tomorrow-Black.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: "Tomorrow Medium";
+  src: url('/src/assets/fonts/Tomorrow-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: "Tomorrow Light";
+  src: url('/src/assets/fonts/Tomorrow-Light.ttf') format('truetype');
+}
+
 a {
   font-weight: 500;
   color: #646cff;
@@ -37,6 +52,11 @@ h1 {
   font-family: 'Tektur', sans-serif;
   font-size: 3.2em;
   line-height: 1.1;
+}
+
+h3 {
+  font-family: 'Tomorrow Medium', sans-serif;
+  font-weight: 100;
 }
 
 button {
