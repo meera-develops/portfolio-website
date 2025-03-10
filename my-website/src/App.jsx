@@ -10,6 +10,7 @@ import Home from "./pages/home/home";
 import Projects from "./pages/projects/Projects";
 import About from "./pages/about/About";
 import Navbar from "./components/navbar";
+import Contact from './pages/contact/Contact';
 
 function App() {
 
@@ -31,6 +32,10 @@ function App() {
               <Route
               path="/About"
               element={<About />} />
+
+              <Route
+              path="/Contact"
+              element={<Contact />} />
 
             </Routes>
           </Router>
