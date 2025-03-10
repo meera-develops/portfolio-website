@@ -1,5 +1,6 @@
 import './home.css';
-import { Container, Typography, ThemeProvider, Box } from '@mui/material';
+import { Container, Typography, ThemeProvider, Box, Button } from '@mui/material';
+// import Button from '@mui/material/Button';
 import { Grid2 } from '@mui/material';
 import theme from '../../theme';
 import headshot from '../../assets/img/Headshotfx.png';
@@ -60,6 +61,26 @@ function Home() {
                             </Grid2>
 
                         </Grid2>
+
+                        <Button variant="contained" size='large' className="button" sx={{ 
+                            mt: 6, 
+                            fontSize: '60px', 
+                            alignItems: 'center', 
+                            fontFamily: 'Tomorrow Medium', 
+                            color: '#fff', 
+                            justifyContent: 'center', 
+                            backgroundColor: '#B972BB',
+                            borderRadius: 5,
+                            position: 'absolute',
+                            left: '42%',
+                            outline: '4px solid #fff',
+                            transition: 'all 0.4s ease',
+                            '&:hover': {
+                                boxShadow: '0px 0px 40px 20px rgba(185, 114, 187, 1)',
+                                },
+                            }}>
+                            PROJECTS
+                        </Button>
 
                     </Box>
 
