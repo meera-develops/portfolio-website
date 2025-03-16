@@ -28,13 +28,15 @@ function Home() {
             rowSpacing={1}
             columnSpacing={{ xs: 1, md: 6 }}
             justifyContent="space-between"
-            alignItems="flex-end"
+            alignItems="center"
+            sx={{ 
+              marginTop:{ xs: 1, sm: 1, md: 3, lg: 0 }
+            }}
           >
             <Grid2 item xs={12} md={6} lg={6}>
               <Typography
                 variant="h1"
                 component="h1"
-                gutterBottom
                 className="overlay"
               >
                 Meera Bhola
@@ -66,19 +68,26 @@ function Home() {
                   display: "flex",
                   justifyContent: "center",
                   alignItems: "center",
+                  height: '100%'
                 }}
               >
                 <img
                   src={headshot}
                   alt="Headshot of Meera Bhola"
                   className="headshot"
+                  style={{ 
+                    maxWidth: '100%', 
+                    height: 'auto',
+                    width: 'auto',
+                    objectFit: 'cover',
+                  }}
                 ></img>
               </Box>
             </Grid2>
           </Grid2>
 
           <Box sx={{ 
-            mt: { sm: 3, md: 4, lg: 7, xl: 12 } 
+            mt: { sm: 3, md: 1, lg: 2, } 
             }}>
             <Grid2 container spacing={2} justifyContent="space-between">
               <Grid2
@@ -92,7 +101,7 @@ function Home() {
                 <MouseOutlinedIcon
                   sx={{
                     color: "#AEA5D4",
-                    fontSize: "80px",
+                    fontSize: { xs: "3rem", md: "4rem", lg: "5rem", xxl: "9rem"},
                     filter: "drop-shadow(4px 2px 6px rgba(185, 114, 187, 1))",
                   }}
                 />
@@ -109,7 +118,7 @@ function Home() {
                 <KeyboardAltOutlinedIcon
                   sx={{
                     color: "#AEA5D4",
-                    fontSize: "80px",
+                    fontSize: { xs: "3rem", md: "4rem", lg: "5rem", xxl: "9rem"},
                     filter: "drop-shadow(4px 2px 6px rgba(185, 114, 187, 1))",
                   }}
                 />
@@ -126,7 +135,7 @@ function Home() {
                 <DesktopWindowsOutlinedIcon
                   sx={{
                     color: "#AEA5D4",
-                    fontSize: "80px",
+                    fontSize: { xs: "3rem", md: "4rem", lg: "5rem", xxl: "9rem"},
                     filter: "drop-shadow(4px 2px 6px rgba(185, 114, 187, 1))",
                   }}
                 />
@@ -143,7 +152,7 @@ function Home() {
                 <LanguageOutlinedIcon
                   sx={{
                     color: "#AEA5D4",
-                    fontSize: "80px",
+                    fontSize: { xs: "3rem", md: "4rem", lg: "5rem", xxl: "9rem"},
                     filter: "drop-shadow(4px 2px 6px rgba(185, 114, 187, 1))",
                   }}
                 />
@@ -155,6 +164,7 @@ function Home() {
                 display: 'flex',
                 justifyContent: 'center',
                 alignItems: 'center',
+                marginTop: { xs: "2rem", lg: '0rem'}
               }}>  
                 <Button
                   variant="contained"

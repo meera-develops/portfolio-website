@@ -28,7 +28,7 @@ function Navbar() {
                         <img
                         src={mb}
                         alt="pink circle logo with letters MB on it"
-                        style={{ width: 60, height: 60}}
+                        style={{ width: 60, height: 60, marginRight: 10,}}
                         className='logo'
                         />
                     </Link>
