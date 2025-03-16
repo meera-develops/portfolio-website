@@ -150,31 +150,37 @@ function Home() {
               </Grid2>
             </Grid2>
 
-            <Link to="/projects">
-              <Button
-                variant="contained"
-                size="large"
-                className="button"
-                sx={{
-                  mt:{ md: 3, lg: 6, xl: 9 }, 
-                  mb: 4,
-                  fontSize: { lg: '50px', xl: '60px'},
-                  alignItems: "center",
-                  fontFamily: "Tomorrow Medium",
-                  color: "#fff",
-                  justifyContent: "center",
-                  backgroundColor: "#B972BB",
-                  borderRadius: 5,
-                  left: "42%",
-                  outline: "4px solid #fff",
-                  transition: "all 0.4s ease",
-                  "&:hover": {
-                    boxShadow: "0px 0px 40px 20px rgba(185, 114, 187, 1)",
-                  },
-                }}
-              >
-                PROJECTS
-              </Button>
+            <Link to="/projects" style={{ textDecoration: 'none' }}>
+              <Box sx={{
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+              }}>  
+                <Button
+                  variant="contained"
+                  size="large"
+                  className="button"
+                  sx={{
+                    mt:{ md: 3, lg: 6, xl: 9 }, 
+                    mb: 4,
+                    fontSize: { lg: '50px', xl: '60px'},
+                    alignItems: "center",
+                    fontFamily: "Tomorrow Medium",
+                    color: "#fff",
+                    justifyContent: "center",
+                    backgroundColor: "#B972BB",
+                    borderRadius: 5,
+                    //left: '40%',
+                    outline: "4px solid #fff",
+                    transition: "all 0.4s ease",
+                    "&:hover": {
+                      boxShadow: "0px 0px 40px 20px rgba(185, 114, 187, 1)",
+                    },
+                  }}
+                >
+                  PROJECTS
+                </Button>
+              </Box>
             </Link>
           </Box>
         </Container>
