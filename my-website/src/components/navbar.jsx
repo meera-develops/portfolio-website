@@ -7,7 +7,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import './navbar.css';
 
-//fix logo on mobile devices
+//change github and linkedin colors to show always?
 
 const pages=['Projects', 'About', 'Resume', 'Contact'];
 

@@ -34,6 +34,10 @@ let theme = createTheme({
         h3: {
             fontFamily: 'Tomorrow Medium'
         },
+        h4: {
+            fontFamily: 'Josefin Sans',
+            fontSize: '2.5rem'  
+        },
         body1: {
             fontFamily: 'Tektur',
         },

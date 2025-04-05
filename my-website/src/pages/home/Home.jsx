@@ -63,6 +63,7 @@ function Home() {
             </Grid2>
 
             <Grid2 item xs={12} md={6} lg={6}>
+              {/* check the css file to debug the image better */}
               <Box
                 sx={{
                   display: "flex",
