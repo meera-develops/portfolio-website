@@ -3,7 +3,13 @@ import "./projects.css";
 import theme from "../../theme";
 import { Container, Typography, Grid2, Box } from "@mui/material";
 import laptop from "../../assets/img/laptop-icon.png";
+import atom from "../../assets/img/atom.svg";
 import Stack from '@mui/material/Stack';
+import Card from '@mui/material/Card';
+import CardContent from '@mui/material/CardContent';
+import CardActions from '@mui/material/CardActions'; //buttons can go in here 
+import CardMedia from '@mui/material/CardMedia';
+import CardActionArea from '@mui/material/CardActionArea'; //to wrap card and trigger action within it 
 
 // maybe use box or stack for alternative layout
 
@@ -17,73 +23,40 @@ function Projects() {
                         <Stack
                             direction={{xs: "column", md: "row"}}
                             style={{ height: '100%' }}
-                            spacing={12}
+                            spacing={{ xs:3, lg:12 }}
                         >
                             <img src={laptop} alt="laptop icon with image of website design inside"></img>
                             <Typography
                                 variant="h5"
                                 component="h5"
                                 className="intro-text"
-                                sx={{ alignSelf: 'center', filter: "drop-shadow(8px 3px 8px rgba(256, 256, 256, 1))", }}
+                                sx={{ alignSelf: 'center', filter: "drop-shadow(0px 0px 11px rgba(255, 255, 255, 1))" }}
                             >
                             Projects allow applicants to demonstrate their skills and provide proof of their work. Here are some recent projects.
                             </Typography>
-
-
                         </Stack>
                     </Box>
-                    {/* <Grid2
-                        container
-                        rowSpacing={1}
-                        columnSpacing={{ xs: 1, md: 6 }}
-                        justifyContent="space-between"
-                        alignItems="center"
-                        sx={{ 
-                          marginTop:{ xs: 1, sm: 1, md: 3, lg: 3 }
-                        }}
-                    > */}
-                        {/* Figure out how to get these two items side-by-side */}
-                        {/* create cards */}
-                        {/* <Grid2 item xs={12} md={6} lg={6} sx={{ border: '1px solid red' }} >
-                            <Box
-                                sx={{
-                                    display: "flex",
-                                    justifyContent: "center",
-                                    alignItems: "center",
-                                    //height: '100%',
-                                    maxWidth: '100%',
-                                }}
-                            >
-                                <img
-                                src={laptop}
-                                alt="laptop icon with image of website design inside"
-                                className="laptop-icon"
-                                style={{ maxWidth: '100%', height: 'auto',  objectFit: 'contain' }}
-                                ></img>
-                            </Box>
-                        </Grid2>
-                        <Grid2 item xs={12} md={6} lg={6} sx={{ border: '1px solid red' }}>
-                            <Box
+                    
+                    <Box> 
+                        {/* apply left margin here, add drop shadow, and make image smaller */}
+                        <Stack direction="row">
+                            <Typography variant="h3" component="h3"
                             sx={{
-                                display: 'flex',
-                                justifyContent: 'center',
-                                alignItems: 'center',
-                                padding: 2,
-                                textAlign: 'center',
-
-                            }}>
-
-                            <Typography
-                                variant="h4"
-                                component="h4"
+                                marginTop: { xs: '75px', md: '100px' }
+                            }}
                             >
-                            Projects allow applicants to demonstrate their skills and provide proof of their work. Here are some recent projects.
+                                Projects
                             </Typography>
-                            </Box>
+                            <img src={atom} 
+                            alt="graphic of mind map that resembles an atom structure"
+                            // make this image smaller
+                            ></img>
+                        </Stack>
+                    </Box>
+                    <Grid2>
 
-                        </Grid2>
-
-                    </Grid2> */}
+                    </Grid2>
+                    
                 </Container>
             </ThemeProvider>
         
