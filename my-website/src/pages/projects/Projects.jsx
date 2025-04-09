@@ -16,13 +16,15 @@ function Projects() {
                     <Box>
                         <Stack
                             direction={{xs: "column", md: "row"}}
-                            spacing={3}
+                            style={{ height: '100%' }}
+                            spacing={12}
                         >
                             <img src={laptop} alt="laptop icon with image of website design inside"></img>
                             <Typography
-                                variant="h4"
-                                component="h4"
-                                sx={{ alignSelf: 'center' }}
+                                variant="h5"
+                                component="h5"
+                                className="intro-text"
+                                sx={{ alignSelf: 'center', filter: "drop-shadow(8px 3px 8px rgba(256, 256, 256, 1))", }}
                             >
                             Projects allow applicants to demonstrate their skills and provide proof of their work. Here are some recent projects.
                             </Typography>
