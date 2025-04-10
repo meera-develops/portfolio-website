@@ -5,15 +5,12 @@ import { Container, Typography, Grid2, Box } from "@mui/material";
 import laptop from "../../assets/img/laptop-icon.png";
 import atom from "../../assets/img/atom.svg";
 import Stack from '@mui/material/Stack';
-//import { sizing } from '@mui/system';
+import theProjects from '../../components/myProjects.json';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardActions from '@mui/material/CardActions'; //buttons can go in here 
 import CardMedia from '@mui/material/CardMedia';
 import CardActionArea from '@mui/material/CardActionArea'; //to wrap card and trigger action within it 
-
-// maybe use box or stack for alternative layout
-
 
 function Projects() {
     return (
@@ -67,14 +64,6 @@ function Projects() {
                             >
 
                             </Box>
-                            {/* <img src={atom} 
-                            alt="graphic of mind map that resembles an atom structure"
-                            sx={{
-                                width: { xs: '10px', lg: '10px', }
-                            }}
-                            // width="10%"
-                            className='atomImage'
-                            ></img> */}
                         </Stack>
                     </Box>
                     <Grid2>
