@@ -5,6 +5,7 @@ import { Container, Typography, Grid2, Box } from "@mui/material";
 import laptop from "../../assets/img/laptop-icon.png";
 import atom from "../../assets/img/atom.svg";
 import Stack from '@mui/material/Stack';
+//import { sizing } from '@mui/system';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardActions from '@mui/material/CardActions'; //buttons can go in here 
@@ -30,27 +31,50 @@ function Projects() {
                                 variant="h5"
                                 component="h5"
                                 className="intro-text"
-                                sx={{ alignSelf: 'center', filter: "drop-shadow(0px 0px 11px rgba(255, 255, 255, 1))" }}
+                                sx={{ 
+                                    alignSelf: 'center', 
+                                    filter: "drop-shadow(0px 0px 11px rgba(255, 255, 255, 1))" 
+                                }}
                             >
                             Projects allow applicants to demonstrate their skills and provide proof of their work. Here are some recent projects.
                             </Typography>
                         </Stack>
                     </Box>
                     
-                    <Box> 
-                        {/* apply left margin here, add drop shadow, and make image smaller */}
+                    <Box sx={{ ml: 5 }}> 
                         <Stack direction="row">
                             <Typography variant="h3" component="h3"
                             sx={{
-                                marginTop: { xs: '75px', md: '100px' }
+                                marginTop: { xs: '40px', md: '50px', },
+                                filter: "drop-shadow(20px 0px 40px rgba(185, 114, 187, 0.8))",
+                                textShadow: '8px 6px 40px rgba(185, 114, 187, 1)',
+
                             }}
+                            className='projectsText'
                             >
                                 Projects
                             </Typography>
-                            <img src={atom} 
+                            <Box
+                                component="img"
+                                src={atom}
+                                alt="graphic of mind map that resembles an atom structure"
+                                sx={{
+                                    width: { xs: '30%', md: '15%'},
+                                    mt: { xs: '1.6rem', md: '1.5rem'},
+                                    ml: { xs: '0.5rem', md: '1rem', xl: '2rem'},
+                                }}
+                            
+                            >
+
+                            </Box>
+                            {/* <img src={atom} 
                             alt="graphic of mind map that resembles an atom structure"
-                            // make this image smaller
-                            ></img>
+                            sx={{
+                                width: { xs: '10px', lg: '10px', }
+                            }}
+                            // width="10%"
+                            className='atomImage'
+                            ></img> */}
                         </Stack>
                     </Box>
                     <Grid2>
