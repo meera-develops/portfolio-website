@@ -66,7 +66,7 @@ function Projects() {
 
                     <Grid2 container spacing={5}>
                         {projects.map(project => (
-                            <Grid2 item key={project.id} xs={12} md={6}>
+                            <Grid2 item={+true} key={project.id} xs={12} md={6}>
                                 <ProjectCard project={project} />
                             </Grid2>
                         ))}

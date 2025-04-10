@@ -15,7 +15,7 @@ export default function ProjectCard({ project }) {
                     maxWidth: 500,
                     margin: 'auto',
                     paddingY: '20px',
-                    paddingRight: '10px',
+                    paddingRight: '30px',
                     paddingLeft: '20px',
                     display: 'flex',
                     flexDirection: 'row',
@@ -30,7 +30,7 @@ export default function ProjectCard({ project }) {
                     image={project.img}
                     alt={project.alt}
                     sx={{
-                        height: 250,
+                        height: 300,
                         objectFit: 'contain',
                         borderRadius: '10px',
                         boxShadow: 5,

@@ -3,7 +3,7 @@ import milkyway from '../assets/img/milkyway.png';
 import yale from '../assets/img/yale-art-school.png';
 import echo from '../assets/img/Echo.png';
 import notemaker from '../assets/img/notemaker.png';
-import waves from '../assets/img/waves.png';
+import kh_dark from '../assets/img/Dark_Theme.png';
 
 const projects = [
 
@@ -63,6 +63,17 @@ const projects = [
             "skills": "UI Design/Prototyping"
 
         },
+        {
+            "id": 6,
+            "title": "KnightHacks Neon Logo",
+            "subtitle": "Dark Theme",
+            "description": "Graphic design project for club brand. Created a neon glow outline of club logo to be used across multiple social media profiles of the club.",
+            "date": "Nov 2024",
+            "img": kh_dark,
+            "alt": "Image of Dragon curled in a circle with a sword going through it featuring the title 'KNIGHT HACKS' to the right of it. Logo is transparent and features a neon purple glow outline around it.",
+            "software": "Adobe Illustrator",
+            "skills": "Graphic Design"
+        }
 ];
 
 export default projects;
