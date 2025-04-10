@@ -5,7 +5,7 @@ import { Container, Typography, Grid2, Box } from "@mui/material";
 import laptop from "../../assets/img/laptop-icon.png";
 import atom from "../../assets/img/atom.svg";
 import Stack from '@mui/material/Stack';
-import projects from "../../components/myProjects.json";
+import projects from "../../components/myProjects";
 import ProjectCard from '../../components/projectCard';
 
 
@@ -35,7 +35,7 @@ function Projects() {
                         </Stack>
                     </Box>
                     
-                    <Box sx={{ ml: 5 }}> 
+                    <Box sx={{ ml: 5, mb: 5 }}> 
                         <Stack direction="row">
                             <Typography variant="h3" component="h3"
                             sx={{
@@ -63,9 +63,9 @@ function Projects() {
                         </Stack>
                     </Box>
 
-                    <Grid2>
+                    <Grid2 container spacing={4}>
                         {projects.map(project => (
-                            <Grid2 item key={project.id} xs={12} md={6} lg={4}>
+                            <Grid2 item key={project.id} xs={12} md={6}>
                                 <ProjectCard project={project} />
                             </Grid2>
                         ))}
