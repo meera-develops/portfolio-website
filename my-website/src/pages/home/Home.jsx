@@ -182,6 +182,7 @@ function Home() {
                     backgroundColor: "#B972BB",
                     borderRadius: 5,
                     //left: '40%',
+                    letterSpacing: '10px',
                     outline: "4px solid #fff",
                     transition: "all 0.4s ease",
                     "&:hover": {

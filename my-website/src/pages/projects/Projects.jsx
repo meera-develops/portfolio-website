@@ -1,7 +1,8 @@
 import { ThemeProvider } from "@emotion/react";
 import "./projects.css";
 import theme from "../../theme";
-import { Container, Typography, Grid2, Box } from "@mui/material";
+import { Container, Typography, Grid2, Box, Button } from "@mui/material";
+import { Link } from "react-router-dom";
 import laptop from "../../assets/img/laptop-icon.png";
 import atom from "../../assets/img/atom.svg";
 import Stack from '@mui/material/Stack';
@@ -63,13 +64,47 @@ function Projects() {
                         </Stack>
                     </Box>
 
-                    <Grid2 container spacing={4}>
+                    <Grid2 container spacing={5}>
                         {projects.map(project => (
                             <Grid2 item key={project.id} xs={12} md={6}>
                                 <ProjectCard project={project} />
                             </Grid2>
                         ))}
                     </Grid2>
+                    <Link to="/about" style={{ textDecoration: 'none' }}>
+                        <Box sx={{
+                            display: 'flex',
+                            justifyContent: 'center',
+                            alignItems: 'center',
+                            marginTop: { xs: "2rem", lg: '0rem'}
+                        }}>  
+                            <Button
+                            variant="contained"
+                            size="large"
+                            className="button"
+                            sx={{
+                                mt:{ md: 3, lg: 6, xl: 9 }, 
+                                mb: 4,
+                                fontSize: { lg: '50px', xl: '60px'},
+                                alignItems: "center",
+                                fontFamily: "Tomorrow Medium",
+                                color: "#fff",
+                                justifyContent: "center",
+                                backgroundColor: "#B972BB",
+                                borderRadius: 5,
+                                letterSpacing: '10px',
+                                //left: '40%',
+                                outline: "4px solid #fff",
+                                transition: "all 0.4s ease",
+                                "&:hover": {
+                                boxShadow: "0px 0px 40px 20px rgba(185, 114, 187, 1)",
+                                },
+                            }}
+                            >
+                            ABOUT
+                            </Button>
+                        </Box>
+                    </Link>
                     
                 </Container>
             </ThemeProvider>
