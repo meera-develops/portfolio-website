@@ -5,12 +5,9 @@ import { Container, Typography, Grid2, Box } from "@mui/material";
 import laptop from "../../assets/img/laptop-icon.png";
 import atom from "../../assets/img/atom.svg";
 import Stack from '@mui/material/Stack';
-import theProjects from '../../components/myProjects.json';
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import CardActions from '@mui/material/CardActions'; //buttons can go in here 
-import CardMedia from '@mui/material/CardMedia';
-import CardActionArea from '@mui/material/CardActionArea'; //to wrap card and trigger action within it 
+import projects from "../../components/myProjects.json";
+import ProjectCard from '../../components/projectCard';
+
 
 function Projects() {
     return (
@@ -62,12 +59,16 @@ function Projects() {
                                 }}
                             
                             >
-
                             </Box>
                         </Stack>
                     </Box>
-                    <Grid2>
 
+                    <Grid2>
+                        {projects.map(project => (
+                            <Grid2 item key={project.id} xs={12} md={6} lg={4}>
+                                <ProjectCard project={project} />
+                            </Grid2>
+                        ))}
                     </Grid2>
                     
                 </Container>

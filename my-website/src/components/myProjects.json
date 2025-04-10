@@ -4,6 +4,7 @@
         "title": "Gotham Mysteries Website",
         "date": "Apr 2024",
         "img": "../assets/img/gotham_site.png",
+        "alt": "image of character gallery from website",
         "software": "BootStrap CSS",
         "skills": "HTML/CSS/JavaScript"
     },
@@ -12,6 +13,7 @@
         "title": "Milky Way - Prototype",
         "date": "Nov 2024",
         "img": "../assets/img/milkyway.png",
+        "alt": "image of fictious coffee shop design using brown and yellow and an image of real coffee shop",
         "software": "Figma",
         "skills": "UI Design/Web Design"
     },
@@ -20,6 +22,7 @@
         "title": "Yale School of Art Redesign",
         "date": "Oct 2024",
         "img": "../assets/img/yale-art-school.png",
+        "alt": "image of redesign for yale school of art website",
         "software": "Figma",
         "skills": "UI Design/Web Design"
     }
