@@ -15,7 +15,8 @@ export default function ProjectCard({ project }) {
                     maxWidth: 500,
                     margin: 'auto',
                     paddingY: '20px',
-                    paddingX: '10px',
+                    paddingRight: '10px',
+                    paddingLeft: '20px',
                     display: 'flex',
                     flexDirection: 'row',
                     justifyContent: 'space-between',
@@ -31,16 +32,29 @@ export default function ProjectCard({ project }) {
                     sx={{
                         height: 250,
                         objectFit: 'contain',
+                        borderRadius: '10px',
+                        boxShadow: 5,
                     }}
                 />
-                <CardContent>
+                <CardContent
+                    sx={{
+                        color: 'white'
+                    }}
+                >
                     <Typography gutterBottom
                     sx={{
-                        textAlign: 'center',
-                        color: 'white',
-                        whiteSpace: 'nowrap'
+                        whiteSpace: 'nowrap',
+                        fontWeight: '600',
+                        textDecoration: 'underline'
                     }}>
                         {project.title}
+                    </Typography>
+                    <Typography gutterBottom 
+                        sx={{
+                            fontFamily: 'Helvetica',
+                        }}
+                    >
+                        {project.description}
                     </Typography>
                 </CardContent>
             </Card>
