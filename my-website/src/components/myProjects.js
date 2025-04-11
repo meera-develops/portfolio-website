@@ -27,7 +27,7 @@ const projects = [
             "img": milkyway,
             "alt": "image of fictious coffee shop design using brown and yellow and an image of real coffee shop",
             "software": "Figma",
-            "skills": "UI Design/Web Design"
+            "skills": "UI Design + Web Design"
         },
         {
             "id": "3",
@@ -38,7 +38,7 @@ const projects = [
             "img": yale,
             "alt": "image of redesign for yale school of art website",
             "software": "Figma",
-            "skills": "UI Design/Web Design"
+            "skills": "UI Design + Web Design"
         },
         {
             "id": 4,
@@ -48,8 +48,8 @@ const projects = [
             "date": "Feb 2025",
             "img": notemaker,
             "alt": "Image of four screen mobile app layout. Design uses a shade of pink and features a log in screen, navbar, upcoming tasks, add tasks screen, and a completed tasks display",
-            "software": "Figma/Expo Go/React Native",
-            "skills": "Mobile Design + Mobile Development"
+            "software": "Figma + Expo Go + React Native",
+            "skills": "Mobile Design + Development"
         },
         {
             "id": 5,
@@ -59,8 +59,8 @@ const projects = [
             "date": "Sep 2024",
             "img": echo,
             "alt": "image of Figma layout for a mobile music app. App features a dark purple color scheme and makes use of music-related icons. Design features 6 screens showcasing different views within the app",
-            "software": "Figma/Expo Go",
-            "skills": "UI Design/Prototyping"
+            "software": "Figma + Expo Go",
+            "skills": "UI Design + Prototyping"
 
         },
         {
