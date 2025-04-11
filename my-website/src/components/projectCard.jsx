@@ -27,7 +27,10 @@ export default function ProjectCard({ project }) {
                     gap: 2,
                     justifyContent: 'space-between',
                     background: 'linear-gradient(135deg, #D6CCFD 0%, rgba(63, 58, 83, 0.5) 100%)',
-                    height: 350,
+                    height: {
+                        xs: 'auto',
+                        lg: 350,
+                    },
                     borderRadius: '30px'
                 }}
             >
@@ -36,7 +39,10 @@ export default function ProjectCard({ project }) {
                     image={project.img}
                     alt={project.alt}
                     sx={{
-                        height: 300,
+                        height: {
+                            xs: 300,
+                            lg: 300,
+                        },
                         maxWidth: 280,
                         objectFit: 'contain',
                         alignSelf: 'center',
