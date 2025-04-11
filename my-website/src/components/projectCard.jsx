@@ -8,17 +8,14 @@ import CardMedia from '@mui/material/CardMedia';
 import CardActionArea from '@mui/material/CardActionArea'; //to wrap card and trigger action within it 
 import './projectCard.css';
 
-//make projects clickable
-
-
 export default function ProjectCard({ project }) {
     return (
-        <div>
+        <a href={project.url} target="_blank" rel="noopener" style={{ textDecoration: 'none' }}>
             <Card
                 sx={{
                     maxWidth: 505,
                     margin: 'auto',
-                    paddingY: '20px',
+                    paddingY: '30px',
                     paddingRight: '30px',
                     paddingLeft: '20px',
                     display: 'flex',
@@ -26,10 +23,11 @@ export default function ProjectCard({ project }) {
                         xs: 'column',
                         md: 'row'
                     },
+                    cursor: 'pointer',
                     gap: 2,
                     justifyContent: 'space-between',
                     background: 'linear-gradient(135deg, #D6CCFD 0%, rgba(63, 58, 83, 0.5) 100%)',
-                    height: '100%',
+                    height: 350,
                     borderRadius: '30px'
                 }}
             >
@@ -39,8 +37,9 @@ export default function ProjectCard({ project }) {
                     alt={project.alt}
                     sx={{
                         height: 300,
-                        maxWidth: 300,
+                        maxWidth: 280,
                         objectFit: 'contain',
+                        alignSelf: 'center',
                         //borderRadius: '10px',
                     }}
                 />
@@ -84,9 +83,7 @@ export default function ProjectCard({ project }) {
                                 fontSize: '0.7rem',
                                 fontWeight: '700',
                                 borderRadius: '20px',
-                                borderWidth: '1.5px',
-
-
+                                borderWidth: '1.8px',
                             }}
                         >
                             {project.date}
@@ -98,7 +95,7 @@ export default function ProjectCard({ project }) {
                                 fontSize: '0.7rem',
                                 fontWeight: '700',
                                 borderRadius: '20px',
-                                borderWidth: '1.5px',
+                                borderWidth: '1.8px',
 
                             }}
                         >
@@ -110,7 +107,7 @@ export default function ProjectCard({ project }) {
                                 fontSize: '0.7rem',
                                 fontWeight: '700',
                                 borderRadius: '20px',
-                                borderWidth: '1.5px',
+                                borderWidth: '1.8px',
                             }}
                         >
                             {project.software}
@@ -118,6 +115,6 @@ export default function ProjectCard({ project }) {
                     </Box>
                 </CardContent>
             </Card>
-        </div>
+        </a>
     )
 }

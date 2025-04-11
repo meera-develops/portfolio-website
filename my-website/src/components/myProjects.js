@@ -16,18 +16,20 @@ const projects = [
             "img": gothamSite,
             "alt": "image of character gallery from website",
             "software": "BootStrap CSS + Phaser.js",
-            "skills": "HTML/CSS/Javascript"
+            "skills": "HTML/CSS/Javascript",
+            "url": "https://beautiful-custard-42380e.netlify.app/",
         },
         {
             "id": "2",
             "title": "Milky Way",
             "prototype": "subitle",
-            "description": 'A Figma protoype of a fictional coffee shop for a class assignment. Prototype features transparent navbar, logo, theme colors, hero images, and a navbar and footer',
+            "description": 'A Figma protoype of a fictional coffee shop for a class assignment. Wireframe features transparent navbar, logo, theme colors, hero images, and a navbar and footer',
             "date": "Nov 2024",
             "img": milkyway,
             "alt": "image of fictious coffee shop design using brown and yellow and an image of real coffee shop",
             "software": "Figma",
-            "skills": "UI Design + Web Design"
+            "skills": "UI Design + Web Design",
+            "url": "https://www.figma.com/file/VTpZ1k3koaGxRLUoKQHd3Z/Milky-Way-Cafe",
         },
         {
             "id": "3",
@@ -38,7 +40,8 @@ const projects = [
             "img": yale,
             "alt": "image of redesign for yale school of art website",
             "software": "Figma",
-            "skills": "UI Design + Web Design"
+            "skills": "UI Design + Web Design",
+            "url": "https://www.figma.com/file/t2fUlWqkctfgdxpuHNn4p0/Yale-School-of-Art",
         },
         {
             "id": 4,
@@ -49,18 +52,20 @@ const projects = [
             "img": notemaker,
             "alt": "Image of four screen mobile app layout. Design uses a shade of pink and features a log in screen, navbar, upcoming tasks, add tasks screen, and a completed tasks display",
             "software": "Figma + Expo Go + React Native",
-            "skills": "Mobile Design + Development"
+            "skills": "Mobile Design + Development",
+            "url": "https://meera-develops.github.io/todoApp/",
         },
         {
             "id": 5,
             "title": "Echo: Mobile App",
             "subtitle": "prototype",
-            "description": "A mobile app project created for a hackathon to a music app that prioritizes social connection. Figma layout features prototyping, a mobile navbar, login and sign up screen, a home screen, and a currently playing display.",
+            "description": "A mobile app group project created for a hackathon. Echo is a music app that prioritizes social connection. Figma features prototyping, a mobile navbar, login and sign up screen, home screen, and a currently playing display.",
             "date": "Sep 2024",
             "img": echo,
             "alt": "image of Figma layout for a mobile music app. App features a dark purple color scheme and makes use of music-related icons. Design features 6 screens showcasing different views within the app",
             "software": "Figma + Expo Go",
-            "skills": "UI Design + Prototyping"
+            "skills": "UI Design + Prototyping",
+            "url": "https://www.figma.com/file/7D4m22giostMwGkHxBL6uV/LetterBox-Spotify",
 
         },
         {
@@ -72,7 +77,8 @@ const projects = [
             "img": kh_dark,
             "alt": "Image of Dragon curled in a circle with a sword going through it featuring the title 'KNIGHT HACKS' to the right of it. Logo is transparent and features a neon purple glow outline around it.",
             "software": "Adobe Illustrator",
-            "skills": "Graphic Design"
+            "skills": "Graphic Design",
+            "url": "https://www.linkedin.com/in/meera-bhola/details/projects/1359116227/multiple-media-viewer/?profileId=ACoAAD4U-YcBdPSxdtJn0IxG7Z5uaxQQw-FiL7I&treasuryMediaId=1737778073306",
         }
 ];
 
