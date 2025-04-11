@@ -30,7 +30,7 @@ function Home() {
             justifyContent="space-between"
             alignItems="center"
             sx={{ 
-              marginTop:{ xs: 1, sm: 1, md: 3, lg: 0 }
+              marginTop:{ xs: 1, sm: 1, md: 3, lg: -2 }
             }}
           >
             <Grid2 item xs={12} md={6} lg={6}>

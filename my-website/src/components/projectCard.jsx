@@ -6,19 +6,26 @@ import CardActions from '@mui/material/CardActions'; //buttons can go in here
 import CardMedia from '@mui/material/CardMedia';
 import CardActionArea from '@mui/material/CardActionArea'; //to wrap card and trigger action within it 
 
+//fix the cards and make it responsive 
+//add skills, date and software on here
+
 
 export default function ProjectCard({ project }) {
     return (
         <div>
             <Card
                 sx={{
-                    maxWidth: 500,
+                    maxWidth: 505,
                     margin: 'auto',
                     paddingY: '20px',
                     paddingRight: '30px',
                     paddingLeft: '20px',
                     display: 'flex',
-                    flexDirection: 'row',
+                    flexDirection: {
+                        xs: 'column',
+                        md: 'row'
+                    },
+                    gap: 2,
                     justifyContent: 'space-between',
                     background: 'linear-gradient(135deg, #D6CCFD 0%, rgba(63, 58, 83, 0.5) 100%)',
                     height: '100%',
@@ -31,14 +38,16 @@ export default function ProjectCard({ project }) {
                     alt={project.alt}
                     sx={{
                         height: 300,
+                        maxWidth: 300,
                         objectFit: 'contain',
                         borderRadius: '10px',
-                        boxShadow: 5,
+                        //alignSelf: 'center',
                     }}
                 />
                 <CardContent
                     sx={{
-                        color: 'white'
+                        color: 'white',
+                        alignSelf: 'center',
                     }}
                 >
                     <Typography gutterBottom
