@@ -14,6 +14,7 @@ import MouseOutlinedIcon from "@mui/icons-material/MouseOutlined";
 import KeyboardAltOutlinedIcon from "@mui/icons-material/KeyboardAltOutlined";
 import DesktopWindowsOutlinedIcon from "@mui/icons-material/DesktopWindowsOutlined";
 import LanguageOutlinedIcon from "@mui/icons-material/LanguageOutlined";
+import { motion } from "motion/react";
 
 //fix display on mobile
 //fix icons, background, and button 
@@ -33,7 +34,7 @@ function Home() {
               marginTop:{ xs: 1, sm: 1, md: 3, lg: -2 }
             }}
           >
-            <Grid2 item xs={12} md={6} lg={6}>
+            <Grid2 item={+true} xs={12} md={6} lg={6}>
               <Typography
                 variant="h1"
                 component="h1"
@@ -62,7 +63,7 @@ function Home() {
               </Typography>
             </Grid2>
 
-            <Grid2 item xs={12} md={6} lg={6}>
+            <Grid2 item={+true} xs={12} md={6} lg={6}>
               {/* check the css file to debug the image better */}
               <Box
                 sx={{
@@ -88,77 +89,94 @@ function Home() {
           </Grid2>
 
           <Box sx={{ 
-            mt: { sm: 3, md: 1, lg: 2, } 
+            mt: { sm: 3, md: 1, } 
             }}>
-            <Grid2 container spacing={2} justifyContent="space-between">
-              <Grid2
-                item
-                xs={12}
-                md={3}
-                display="flex"
-                justifyContent="center"
-                className="mouse-icons"
-              >
-                <MouseOutlinedIcon
-                  sx={{
-                    color: "#AEA5D4",
-                    fontSize: { xs: "3rem", md: "4rem", lg: "5rem", xxl: "9rem"},
-                    filter: "drop-shadow(4px 2px 6px rgba(185, 114, 187, 1))",
-                  }}
-                />
-              </Grid2>
 
-              <Grid2
-                item
-                xs={12}
-                md={3}
+            <Box
+               sx={{
+                marginX: 0,
+                paddingX: 0,
+                position: 'relative',
+                width: '100vw',
+                overflow: 'hidden',
+              }}
+            >
+              <motion.div
                 display="flex"
-                justifyContent="center"
-                className="keyboard-icons"
+                animate={{
+                  x: ['-100%', '80%'],
+                  transition: {
+                      ease: 'linear',
+                      duration: 7,
+                      repeat: Infinity,
+                  }
+              }}
               >
-                <KeyboardAltOutlinedIcon
-                  sx={{
-                    color: "#AEA5D4",
-                    fontSize: { xs: "3rem", md: "4rem", lg: "5rem", xxl: "9rem"},
-                    filter: "drop-shadow(4px 2px 6px rgba(185, 114, 187, 1))",
-                  }}
-                />
-              </Grid2>
+                <Box display="flex" width="100%">
+                  <Box
+                    flex="1"
+                    display="flex"
+                    justifyContent="center"
+                    className="mouse-icons"
+                  >
+                    <MouseOutlinedIcon
+                      sx={{
+                        color: "#AEA5D4",
+                        fontSize: { xs: "3rem", md: "4rem", lg: "5rem", xxl: "9rem"},
+                        filter: "drop-shadow(4px 2px 6px rgba(185, 114, 187, 1))",
+                      }}
+                    />
+                  </Box>
 
-              <Grid2
-                item
-                xs={12}
-                md={3}
-                display="flex"
-                justifyContent="center"
-                className="screen-icons"
-              >
-                <DesktopWindowsOutlinedIcon
-                  sx={{
-                    color: "#AEA5D4",
-                    fontSize: { xs: "3rem", md: "4rem", lg: "5rem", xxl: "9rem"},
-                    filter: "drop-shadow(4px 2px 6px rgba(185, 114, 187, 1))",
-                  }}
-                />
-              </Grid2>
+                  <Box
+                    flex="1"
+                    display="flex"
+                    justifyContent="center"
+                    className="keyboard-icons"
+                  >
+                    <KeyboardAltOutlinedIcon
+                      sx={{
+                        color: "#AEA5D4",
+                        fontSize: { xs: "3rem", md: "4rem", lg: "5rem", xxl: "9rem"},
+                        filter: "drop-shadow(4px 2px 6px rgba(185, 114, 187, 1))",
+                      }}
+                    />
+                  </Box>
 
-              <Grid2
-                item
-                xs={12}
-                md={3}
-                display="flex"
-                justifyContent="center"
-                className="web-icons"
-              >
-                <LanguageOutlinedIcon
-                  sx={{
-                    color: "#AEA5D4",
-                    fontSize: { xs: "3rem", md: "4rem", lg: "5rem", xxl: "9rem"},
-                    filter: "drop-shadow(4px 2px 6px rgba(185, 114, 187, 1))",
-                  }}
-                />
-              </Grid2>
-            </Grid2>
+                  <Box
+                    flex="1"
+                    display="flex"
+                    justifyContent="center"
+                    className="screen-icons"
+                  >
+                    <DesktopWindowsOutlinedIcon
+                      sx={{
+                        color: "#AEA5D4",
+                        fontSize: { xs: "3rem", md: "4rem", lg: "5rem", xxl: "9rem"},
+                        filter: "drop-shadow(4px 2px 6px rgba(185, 114, 187, 1))",
+                      }}
+                    />
+                  </Box>
+
+                  <Box
+                    flex="1"
+                    display="flex"
+                    justifyContent="center"
+                    className="web-icons"
+                  >
+                    <LanguageOutlinedIcon
+                      sx={{
+                        color: "#AEA5D4",
+                        fontSize: { xs: "3rem", md: "4rem", lg: "5rem", xxl: "9rem"},
+                        filter: "drop-shadow(4px 2px 6px rgba(185, 114, 187, 1))",
+                      }}
+                    />
+                  </Box>
+                </Box>
+
+              </motion.div>
+
+            </Box>
 
             <Link to="/projects" style={{ textDecoration: 'none' }}>
               <Box sx={{

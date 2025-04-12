@@ -3,9 +3,7 @@ import { Typography, Box } from '@mui/material';
 import Button from '@mui/material/Button';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
-import CardActions from '@mui/material/CardActions'; //buttons can go in here 
 import CardMedia from '@mui/material/CardMedia';
-import CardActionArea from '@mui/material/CardActionArea'; //to wrap card and trigger action within it 
 import './projectCard.css';
 
 export default function ProjectCard({ project }) {
