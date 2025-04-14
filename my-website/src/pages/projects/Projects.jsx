@@ -23,15 +23,14 @@ function Projects() {
                         >
                             <img src={laptop} alt="laptop icon with image of website design inside"></img>
                             <Typography
-                                variant="h5"
-                                component="h5"
-                                className="intro-text"
+                                variant="body3"
                                 sx={{ 
                                     alignSelf: 'center', 
-                                    filter: "drop-shadow(0px 0px 11px rgba(255, 255, 255, 1))" 
+                                    filter: "drop-shadow(0px 0px 11px rgba(255, 255, 255, 1))",
+                                    fontSize: '2.2rem'
                                 }}
                             >
-                            Projects allow applicants to demonstrate their skills and provide proof of their work. Here are some recent projects.
+                            Below you'll find an assortment of recent web design and web development projects I've worked on. Each project can be clicked on to view more.
                             </Typography>
                         </Stack>
                     </Box>

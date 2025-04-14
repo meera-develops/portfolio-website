@@ -39,6 +39,7 @@ function Home() {
                 variant="h1"
                 component="h1"
                 className="overlay"
+                marginBottom={2}
               >
                 Meera Bhola
               </Typography>
@@ -47,7 +48,7 @@ function Home() {
                 style={{ fontFamily: "Tomorrow Medium" }}
                 className="overlay2"
               >
-                Web Designer
+                Web Designer,
               </Typography>
               <Typography
                 variant="h2"

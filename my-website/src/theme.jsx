@@ -49,6 +49,10 @@ let theme = createTheme({
         body2: {
             fontFamily: 'Josefin Sans',
             fontSize: '1.4rem'
+        },
+        body3: {
+            fontFamily: "Tomorrow Medium",
+            
         }
     },
 });

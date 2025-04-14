@@ -4,8 +4,8 @@ import Stack from '@mui/material/Stack';
 import { Link } from "react-router-dom";
 import theme from "../../theme";
 import devBrain from "../../assets/img/developer-icons.svg";
-
-
+import SkillCard from "../../components/Skills";
+import skills from "../../components/mySkills";
 
 function About() {
     return (
@@ -41,7 +41,7 @@ function About() {
                     </Box>
                     <Box>
                         <Typography variant="body2">
-                            I’m Meera Bhola, a web development student based in Orlando, Florida. After discovering my passion for coding in college, I’ve developed skills in web design, HTML, CSS, JavaScript, PHP, mobile development, and their respective frameworks.
+                            I’m Meera Bhola, a fourth-year web development student at UCF. After discovering my passion for coding in college, I’ve developed skills in web design, HTML, CSS, JavaScript, PHP, mobile development, and their respective frameworks.
                         </Typography>
                                 <br></br>
                         <Typography variant="body2">
@@ -57,6 +57,9 @@ function About() {
                         <Typography variant="h3"
                             sx={{
                                 marginTop: { xs: '40px', md: '50px', },
+                                marginBottom: {
+                                    xs: '50px'
+                                },
                                 filter: "drop-shadow(20px 0px 30px rgba(185, 114, 187, 0.8))",
                                 textShadow: '0px 0px 40px rgba(185, 114, 187, 1)',
 
@@ -67,6 +70,13 @@ function About() {
                     </Box>
                     
                     {/* set up grid2 for skill icons here similar to how i set up the projects file  */}
+                    <Grid2 container spacing={12} justifyContent="center">
+                        {skills.map(skill => (
+                            <Grid2 item={+true} key={skill.id} xs={12} md={6} lg={4}>
+                                <SkillCard skill={skill} />
+                            </Grid2>
+                        ))}
+                    </Grid2>
 
 
                     <Link to="/contact" style={{ textDecoration: 'none' }}>

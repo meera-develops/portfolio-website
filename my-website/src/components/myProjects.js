@@ -53,7 +53,7 @@ const projects = [
             "alt": "Image of four screen mobile app layout. Design uses a shade of pink and features a log in screen, navbar, upcoming tasks, add tasks screen, and a completed tasks display",
             "software": "Figma + Expo Go + React Native",
             "skills": "Mobile Design + Development",
-            "url": "https://meera-develops.github.io/todoApp/",
+            "url": "https://youtube.com/shorts/SGUAIv_gmF4?si=UExVGI0SgZDeZ7wW",
         },
         {
             "id": 5,
