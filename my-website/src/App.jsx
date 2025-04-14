@@ -10,6 +10,7 @@ import Home from "./pages/home/Home";
 import Projects from "./pages/projects/Projects";
 import About from "./pages/about/About";
 import Navbar from "./components/navbar";
+import Resume from "./pages/resume/Resume";
 import Contact from './pages/contact/Contact';
 
 function App() {
@@ -32,6 +33,10 @@ function App() {
               <Route
               path="/about"
               element={<About />} />
+
+              <Route
+              path="/resume"
+              element={<Resume />} />
 
               <Route
               path="/contact"
