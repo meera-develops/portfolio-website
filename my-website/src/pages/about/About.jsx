@@ -69,7 +69,6 @@ function About() {
                             </Typography>
                     </Box>
                     
-                    {/* set up grid2 for skill icons here similar to how i set up the projects file  */}
                     <Grid2 container spacing={12} justifyContent="center">
                         {skills.map(skill => (
                             <Grid2 item={+true} key={skill.id} xs={12} md={6} lg={4}>
@@ -77,7 +76,6 @@ function About() {
                             </Grid2>
                         ))}
                     </Grid2>
-
 
                     <Link to="/contact" style={{ textDecoration: 'none' }}>
                         <Box sx={{

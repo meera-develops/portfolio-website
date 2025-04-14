@@ -16,9 +16,6 @@ import DesktopWindowsOutlinedIcon from "@mui/icons-material/DesktopWindowsOutlin
 import LanguageOutlinedIcon from "@mui/icons-material/LanguageOutlined";
 import { motion } from "motion/react";
 
-//fix display on mobile
-//fix icons, background, and button 
-
 function Home() {
   return (
     <>
@@ -65,7 +62,6 @@ function Home() {
             </Grid2>
 
             <Grid2 item={+true} xs={12} md={6} lg={6}>
-              {/* check the css file to debug the image better */}
               <Box
                 sx={{
                   display: "flex",

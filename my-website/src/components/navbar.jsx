@@ -1,4 +1,4 @@
-import React, {useState, MouseEvent} from 'react';
+import React, { useState } from 'react';
 import { AppBar, Toolbar, Typography, IconButton, Box, Button, Menu, MenuItem } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import { Link } from 'react-router-dom';
@@ -7,7 +7,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import './navbar.css';
 
-//change github and linkedin colors to show always?
+//add home button to navbar
 
 const pages=['Projects', 'About', 'Resume', 'Contact'];
 
@@ -37,10 +37,11 @@ function Navbar() {
                                 component="a"
                                 href="https://www.linkedin.com/in/meera-bhola/"
                                 target="_blank"
+                                rel="noopener"
                                 color="inherit"
                                 sx={{ display: 'flex', 
                                     alignItems: 'center ',
-                                    transition: 'all 0.3s ease', // Smooth transition for hover effect
+                                    transition: 'all 0.3s ease', 
                                     '&:hover': {
                                     transform: 'scale(1.2)',
                                     },
@@ -55,9 +56,10 @@ function Navbar() {
                                 href="https://github.com/meera-develops"
                                 target="_blank"
                                 color="inherit"
+                                rel="noopener"
                                 sx={{ display: 'flex', 
                                     alignItems: 'center',
-                                    transition: 'all 0.3s ease', // Smooth transition for hover effect
+                                    transition: 'all 0.3s ease', 
                                     '&:hover': {
                                     transform: 'scale(1.2)',
                                     },
