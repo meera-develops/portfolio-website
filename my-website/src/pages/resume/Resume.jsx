@@ -27,10 +27,10 @@ function Resume() {
                         </Box> */}
                         <Box
                             component="img"
-                            src="/meera_bhola_resume.jpg"
+                            src="/meera_bhola_resume.png"
                             sx={{
                                 width: '100%', 
-                                maxWidth: '600px',
+                                maxWidth: '500px',
                                 height: 'auto', 
                                 display: 'block', 
                                 mt: 4, 
@@ -57,6 +57,12 @@ function Resume() {
                                 rel="noopener noreferrer"
                                 color="accent"
                                 startIcon={<PictureAsPdfIcon />}
+                                sx={{
+                                    '&:hover': {
+                                      color: 'inherit',  // Preserve the color on hover (no color change)
+                                      boxShadow: "0px 0px 40px 20px rgba(185, 114, 187, 1)",
+                                    }
+                                  }}
                             >
                                 Download Resume
                             </Button>
