@@ -1,14 +1,43 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { Typography, ThemeProvider, Button, Box, Container } from '@mui/material';
 import TextField from '@mui/material/TextField';
 import theme from '../../theme';
 import MailIcon from '@mui/icons-material/Mail';
+import Snackbar from '@mui/material/Snackbar';
+import CloseIcon from '@mui/icons-material/Close';
+import IconButton from '@mui/material/IconButton';
 
 // add confirmaiton message for copying email and submitting form 
 // perform form validation
 
 export default function Contact() {
+
+    const [completed, setCompleted] = useState(false);
+
+    const handleClick = () => {
+        setCompleted(true);
+    };
+
+    const handleClose = (event, reason) => {
+        if (reason === 'clickaway') {
+            return; 
+        }
+        setCompleted(false);
+    }
+
+    const action = (
+        <React.Fragment>
+          <IconButton
+            size="small"
+            aria-label="close"
+            color="inherit"
+            onClick={handleClose}
+        >
+            <CloseIcon fontSize="small" />
+        </IconButton>
+        </React.Fragment>
+    )
 
     const form = useRef();
 
@@ -35,7 +64,7 @@ export default function Contact() {
         <>
             <ThemeProvider theme={theme}>
                 <Container
-                    sx={{justifyItems: 'center', mt: { lg: 3, }, pb: 5, }}
+                    sx={{justifyItems: 'center', mt: { xs: 2, lg: 3, }, pb: 5, }}
                 >
                     <Box
                         sx={{ display: "flex", flexDirection: "column", width: "100%", 
@@ -51,6 +80,7 @@ export default function Contact() {
                         pt: 1,
                         gap: 2,
                         backgroundColor: 'rgba(50, 49, 49, 0.8)',
+                        // borderRadius: 5,
                         }}
                     >
                         <form ref={form} onSubmit={sendEmail}>
@@ -58,10 +88,10 @@ export default function Contact() {
                         sx={{
                             textAlign: 'center',
                             textShadow: `
-                            -1px -1px 0 rgba(185, 114, 187, 1),
-                            1px -1px 0 rgba(185, 114, 187, 1),
-                            -1px 1px 0 rgba(185, 114, 187, 1),
-                            1px 1px 0 rgba(185, 114, 187, 1)
+                            -2px -2px 0 rgba(185, 114, 187, 1),
+                            2px -1px 0 rgba(185, 114, 187, 1),
+                            -2px 2px 0 rgba(185, 114, 187, 1),
+                            2px 1px 0 rgba(185, 114, 187, 1)
                             `    
                         }}
                         >
@@ -120,9 +150,21 @@ export default function Contact() {
                                 fontWeight: 'bold',
                             }}
                         >
-                            Or if you prefer, you can email me directly at <span style={{cursor: "pointer", color: "#4f66d6", textDecoration: "underline"}} onClick={() => navigator.clipboard.writeText("meerabhola3@gmail.com")} >meerabhola3@gmail.com</span>
+                            Or if you prefer, you can email me directly at <span 
+                            style={{cursor: "pointer", color: "#4f66d6", textDecoration: "underline"}} 
+                            onClick={() => {
+                                navigator.clipboard.writeText("meerabhola3@gmail.com"); handleClick();
+                                }} 
+                            > meerabhola3@gmail.com</span>
                             {/* add confirmation message here */}
                         </Typography>
+                        <Snackbar
+                            open={completed}
+                            autoHideDuration={4000}
+                            onClose={handleClose}
+                            message="Email address copied"
+                            action={action}
+                        />
 
                         <Box
                             textAlign="center"
