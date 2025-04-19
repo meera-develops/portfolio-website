@@ -29,7 +29,7 @@ To run the project locally:
 1. Clone the repository:
     ```bash
    https://github.com/meera-develops/portfolio-website.git
-2. cd portfolio-website
+2. cd my-website
 3. pnpm run dev
 4. Localhost should now be running in your browser!
 
