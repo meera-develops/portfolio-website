@@ -33,7 +33,7 @@ let theme = createTheme({
         },
         h3: {
             fontFamily: 'Tomorrow Medium',
-            fontSize: '5rem',
+            fontSize: '4rem',
         },
         h4: {
             fontFamily: 'Josefin Sans',
