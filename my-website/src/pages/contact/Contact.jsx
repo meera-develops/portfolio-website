@@ -150,6 +150,7 @@ export default function Contact() {
                 label="message"
                 variant="filled"
                 fullWidth
+                required
                 margin="normal"
                 name="feedback"
                 multiline
