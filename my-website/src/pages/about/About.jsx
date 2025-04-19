@@ -11,7 +11,7 @@ function About() {
     return (
         <>
             <ThemeProvider theme={theme}>
-                <Container>
+                <Container sx={{pb: 5}}>
                 <Box sx={{ mb: 5 }}> 
                         <Stack direction="row">
                             <Typography variant="h3" component="h3"

@@ -9,13 +9,14 @@ export default function Skills({ skill }) {
                 flexDirection="column"
                 alignItems="center"
                 // mx={2}
-                
             >
                 <Fab
                     sx={{
                         width: 150,
                         height: 150,
-                        backgroundColor: '#ffffff'
+                        backgroundColor: '#ffffff',
+                        cursor: 'default',
+                        pointerEvents: 'none'
                     }}
                 >
                     <img 

@@ -4,7 +4,7 @@ import Phone from "../assets/img/skills/mobile.svg";
 import React from "../assets/img/skills/react.svg";
 import Github from "../assets/img/skills/github.svg";
 import PHP from "../assets/img/skills/php.svg";
-import Terminal from "../assets/img/skills/terminal.svg";
+import Adobe from "../assets/img/skills/adobe.svg";
 import MaterialUI from "../assets/img/skills/mui.svg";
 import WordPress from "../assets/img/skills/wordpress.svg";
 
@@ -47,8 +47,8 @@ const theSkills = [
     },
     {
         "id": 8,
-        "label": "Terminal",
-        "image": Terminal
+        "label": "Adobe Creative",
+        "image": Adobe
     },
     {
         "id": 9,

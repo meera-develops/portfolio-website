@@ -3,8 +3,6 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
-  Navigate,
-  Link
 } from "react-router-dom";
 import Home from "./pages/home/Home";
 import Projects from "./pages/projects/Projects";
@@ -12,12 +10,18 @@ import About from "./pages/about/About";
 import Navbar from "./components/navbar";
 import Resume from "./pages/resume/Resume";
 import Contact from './pages/contact/Contact';
+import Footer from './components/footer';
 
 function App() {
 
   return (
     <>
-      <div>
+      <div style={{
+        display: 'flex',
+        minHeight: '100vh',
+        flexDirection: 'column',
+
+      }}>
           <Router>
             <Navbar />
             <Routes>
@@ -44,8 +48,8 @@ function App() {
 
             </Routes>
           </Router>
+          <Footer />
         
-
       </div>
     </>
   )

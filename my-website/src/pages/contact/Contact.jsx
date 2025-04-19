@@ -16,8 +16,8 @@ import IconButton from "@mui/material/IconButton";
 import Alert from "@mui/material/alert";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 
-// add confirmaiton message for submitting form
 // perform form validation
+// add confirmaiton message for submitting form
 
 export default function Contact() {
   const [completed, setCompleted] = useState(false);
