@@ -14,7 +14,10 @@ function Projects() {
     return (
         <>
             <ThemeProvider theme={theme}>
-                <Container>
+                <Container
+                    sx={{ pb: 5, }}
+
+                >
                     <Box>
                         <Stack
                             direction={{xs: "column", md: "row"}}

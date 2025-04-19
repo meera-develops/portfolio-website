@@ -20,7 +20,11 @@ function Home() {
   return (
     <>
       <ThemeProvider theme={theme}>
-        <Container>
+        <Container
+          sx={{
+            pb: 5,
+          }}
+        >
           <Grid2
             container
             rowSpacing={1}

@@ -32,11 +32,10 @@ export default function Contact() {
     };
 
     return (
-        //style form better
         <>
             <ThemeProvider theme={theme}>
                 <Container
-                    sx={{justifyItems: 'center', mt: 4, }}
+                    sx={{justifyItems: 'center', mt: { lg: 3, }, pb: 5, }}
                 >
                     <Box
                         sx={{ display: "flex", flexDirection: "column", width: "100%", 
@@ -49,6 +48,7 @@ export default function Contact() {
                             xs: 3,
                             lg: 5,
                         },
+                        pt: 1,
                         gap: 2,
                         backgroundColor: 'rgba(50, 49, 49, 0.8)',
                         }}
@@ -107,13 +107,12 @@ export default function Contact() {
                             margin="normal"
                             name="feedback"
                             multiline
-                            rows={4}
+                            rows={3}
                             sx={{
                                 backgroundColor: 'white',
                             }} 
                         />
 
-                        {/* <input type="submit" value="Send" /> */}
                         <Typography variant="body2"
                             sx={{
                                 mt: 3,
@@ -121,7 +120,7 @@ export default function Contact() {
                                 fontWeight: 'bold',
                             }}
                         >
-                            Or if you prefer, you can email me directly at <span style={{cursor: "pointer", color: "#3f5bcc", textDecoration: "underline"}} onClick={() => navigator.clipboard.writeText("meerabhola3@gmail.com")} >meerabhola3@gmail.com</span>
+                            Or if you prefer, you can email me directly at <span style={{cursor: "pointer", color: "#4f66d6", textDecoration: "underline"}} onClick={() => navigator.clipboard.writeText("meerabhola3@gmail.com")} >meerabhola3@gmail.com</span>
                             {/* add confirmation message here */}
                         </Typography>
 
@@ -136,7 +135,7 @@ export default function Contact() {
                                 sx={{
                                     mt:{ xs: 2, md: 3, lg: 4, }, 
                                     mb: 5,
-                                    fontSize: { lg: '22px',},
+                                    fontSize: { lg: '24px',},
                                     alignItems: "center",
                                     fontFamily: "Tomorrow Medium",
                                     color: "#fff",

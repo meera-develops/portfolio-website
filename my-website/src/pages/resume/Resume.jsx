@@ -7,7 +7,10 @@ function Resume() {
     return (
         <>
             <ThemeProvider theme={theme}>
-                <Container>
+                <Container
+                    sx={{ pb: 5, }}
+
+                >
                     <Box
                         display="flex"
                         flexDirection="column"
@@ -58,6 +61,7 @@ function Resume() {
                                 color="accent"
                                 startIcon={<PictureAsPdfIcon />}
                                 sx={{
+                                    mt: 2,
                                     '&:hover': {
                                       color: 'inherit',  // Preserve the color on hover (no color change)
                                       boxShadow: "0px 0px 40px 20px rgba(185, 114, 187, 1)",
