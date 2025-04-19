@@ -1,19 +1,42 @@
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
 export default function Contact() {
 
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs
+        .sendForm(import.meta.env.VITE_EMAILJS_SERVICE_ID, import.meta.env.VITE_EMAILJS_TEMPLATE_ID, form.current, {
+            publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
+        })
+        .then(
+            () => {
+            console.log('SUCCESS!');
+            e.target.reset();
+            },
+            (error) => {
+            console.log('FAILED...', error.text);
+            },
+        );
+    };
+
     return (
         <>
-            <div>
-                <h1>You can CONTACT me here</h1>
-            </div>
-            <div>
-               {/* use this site for sending email forms via emailJS: https://medium.com/kirsten-werner/using-a-react-form-to-send-information-directly-to-your-email-2c9666f0d63a */}
-               {/* this one looks good too: https://medium.com/@thomasaugot/create-a-react-contact-form-with-email-js-cad2c8606f33 */}
-               {/* https://hackernoon.com/integrating-a-contact-form-with-emailjs-in-react */}
-               there's also formsubmit.co and web3forms
-            </div>
+            <form ref={form} onSubmit={sendEmail}>
+            <label>Name</label>
+            <input type="text" name="user_name" />
+            <label>Email</label>
+            <input type="email" name="user_email" />
+            <label>Message</label>
+            <textarea name="feedback" />
+            <input type="submit" value="Send" />
+            </form>
         
         </>
     )
 }
+
 
