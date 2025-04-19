@@ -13,19 +13,20 @@ function Resume() {
                         flexDirection="column"
                     
                     >
-                        {/* <Box
+                        <Box
                             component="embed"
                             src="/meera_bhola_resume.pdf"
                             sx={{
-                                width: '100%',
-                                height: '600px',
+                                width: '80%',
+                                height: '800px',
                                 border: 'none',
                                 mt: 4,
                                 mb: 2,
+                                alignSelf: 'center',
                             }}
                         >
-                        </Box> */}
-                        <Box
+                        </Box>
+                        {/* <Box
                             component="img"
                             src="/meera_bhola_resume.png"
                             sx={{
@@ -39,8 +40,7 @@ function Resume() {
                                 imageRendering: 'crisp-pages'
                             }}
                         >
-
-                        </Box>
+                        </Box> */}
 
                         <Box
                             sx={{

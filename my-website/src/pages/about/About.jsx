@@ -69,6 +69,7 @@ function About() {
                             </Typography>
                     </Box>
                     
+                    {/* see if you change alignment of skills here */}
                     <Grid2 container spacing={12} justifyContent="center">
                         {skills.map(skill => (
                             <Grid2 item={+true} key={skill.id} xs={12} md={6} lg={4}>
