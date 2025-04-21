@@ -33,7 +33,7 @@ function Projects() {
                                     fontSize: '2.2rem'
                                 }}
                             >
-                            Below you'll find an assortment of recent web design and web development projects I've worked on. Each project can be clicked on to view more.
+                            Below you'll find an assortment of recent web design and web development projects I've worked on. Click on the projects to view more.
                             </Typography>
                         </Stack>
                     </Box>
