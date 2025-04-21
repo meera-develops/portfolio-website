@@ -15,12 +15,25 @@ import CloseIcon from "@mui/icons-material/Close";
 import IconButton from "@mui/material/IconButton";
 import Alert from "@mui/material/alert";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
+import * as Yup from "yup";
 
-// perform form validation
-// add confirmaiton message for submitting form
+const validationSchema = Yup.object({
+  user_name: Yup.string().required("Name is required"),
+  user_email: Yup.string().email("Invalid email address").required("Email is required"),
+  user_subject: Yup.string().required("Subject is required"),
+  feedback: Yup.string().required("Message is required"),
+});
 
 export default function Contact() {
   const [completed, setCompleted] = useState(false);
+
+  const [formValues, setFormValues] = useState({
+    user_name: "",
+    user_email: "",
+    user_subject: "",
+    feedback: "",
+  });
+  const [errors, setErrors] = useState({});
 
   const handleClick = () => {
     setCompleted(true);
@@ -48,8 +61,36 @@ export default function Contact() {
 
   const form = useRef();
 
-  const sendEmail = (e) => {
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormValues({
+      ...formValues,
+      [name]: value,
+    });
+  };
+
+  const validateForm = async () => {
+    try {
+      await validationSchema.validate(formValues, { abortEarly: false });
+      return {};
+    } catch (err) {
+      const validationErrors = err.inner.reduce((acc, curr) => {
+        acc[curr.path] = curr.message;
+        return acc;
+      }, {});
+      return validationErrors;
+    }
+  };
+
+  const sendEmail = async (e) => {
     e.preventDefault();
+
+    const formErrors = await validateForm();
+
+    if (Object.keys(formErrors).length > 0) {
+      setErrors(formErrors);
+      return;
+    }
 
     emailjs
       .sendForm(
@@ -63,7 +104,14 @@ export default function Contact() {
       .then(
         () => {
           console.log("SUCCESS!");
-          e.target.reset();
+          setFormValues({
+            user_name: "",
+            user_email: "",
+            user_subject: "",
+            feedback: "",
+          }); 
+          setErrors({}); 
+          // e.target.reset();
           //include alert or notifcation that the email was successfully sent
         },
         (error) => {
@@ -117,7 +165,11 @@ export default function Contact() {
                 fullWidth
                 margin="normal"
                 name="user_name"
-                required
+                value={formValues.user_name}
+                onChange={handleChange}
+                error={!!errors.user_name}
+                helperText={errors.user_name || ""}
+                // required
                 sx={{
                   backgroundColor: "white",
                 }}
@@ -126,9 +178,13 @@ export default function Contact() {
                 label="email"
                 variant="filled"
                 fullWidth
-                required
+                // required
                 margin="normal"
                 name="user_email"
+                value={formValues.user_email}
+                onChange={handleChange}
+                error={!!errors.user_email}
+                helperText={errors.user_email || ""}
                 sx={{
                   backgroundColor: "white",
                 }}
@@ -138,9 +194,13 @@ export default function Contact() {
                 label="subject"
                 variant="filled"
                 fullWidth
-                required
+                // required
                 margin="normal"
                 name="user_subject"
+                value={formValues.user_subject}
+                onChange={handleChange}
+                error={!!errors.user_subject}
+                helperText={errors.user_subject || ""}
                 sx={{
                   backgroundColor: "white",
                 }}
@@ -150,14 +210,18 @@ export default function Contact() {
                 label="message"
                 variant="filled"
                 fullWidth
-                required
+                // required
                 margin="normal"
                 name="feedback"
+                value={formValues.feedback}
+                onChange={handleChange}
                 multiline
                 rows={3}
                 sx={{
                   backgroundColor: "white",
                 }}
+                error={!!errors.feedback}
+                helperText={errors.feedback || ""}
               />
 
               <Typography
