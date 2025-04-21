@@ -78,7 +78,6 @@ function About() {
                         ))}
                     </Grid2>
 
-                    <Link to="/contact" style={{ textDecoration: 'none' }}>
                         <Box sx={{
                             display: 'flex',
                             justifyContent: 'center',
@@ -86,6 +85,8 @@ function About() {
                             marginTop: { xs: "2rem", lg: '0rem'}
                         }}>  
                             <Button
+                            component={Link}
+                            to="/contact"
                             variant="contained"
                             size="large"
                             className="button"
@@ -104,14 +105,14 @@ function About() {
                                 outline: "4px solid #fff",
                                 transition: "all 0.4s ease",
                                 "&:hover": {
-                                boxShadow: "0px 0px 40px 20px rgba(185, 114, 187, 1)",
+                                    boxShadow: "0px 0px 40px 20px rgba(185, 114, 187, 1)",
+                                    color: '#fff'
                                 },
                             }}
                             >
                             CONTACT
                             </Button>
                         </Box>
-                    </Link>
 
                 </Container>
             </ThemeProvider>

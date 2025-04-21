@@ -15,6 +15,7 @@ import KeyboardAltOutlinedIcon from "@mui/icons-material/KeyboardAltOutlined";
 import DesktopWindowsOutlinedIcon from "@mui/icons-material/DesktopWindowsOutlined";
 import LanguageOutlinedIcon from "@mui/icons-material/LanguageOutlined";
 import { motion } from "motion/react";
+import { link } from "motion/react-client";
 
 function Home() {
   return (
@@ -179,7 +180,6 @@ function Home() {
 
             </Box>
 
-            <Link to="/projects" style={{ textDecoration: 'none' }}>
               <Box sx={{
                 display: 'flex',
                 justifyContent: 'center',
@@ -187,6 +187,8 @@ function Home() {
                 marginTop: { xs: "2rem", lg: '0rem'}
               }}>  
                 <Button
+                  component={Link}
+                  to="/projects"
                   variant="contained"
                   size="large"
                   className="button"
@@ -206,13 +208,13 @@ function Home() {
                     transition: "all 0.4s ease",
                     "&:hover": {
                       boxShadow: "0px 0px 40px 20px rgba(185, 114, 187, 1)",
+                      color: '#fff',
                     },
                   }}
                 >
                   PROJECTS
                 </Button>
               </Box>
-            </Link>
           </Box>
         </Container>
       </ThemeProvider>

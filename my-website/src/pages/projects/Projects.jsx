@@ -73,7 +73,6 @@ function Projects() {
                             </Grid2>
                         ))}
                     </Grid2>
-                    <Link to="/about" style={{ textDecoration: 'none' }}>
                         <Box sx={{
                             display: 'flex',
                             justifyContent: 'center',
@@ -99,14 +98,14 @@ function Projects() {
                                 outline: "4px solid #fff",
                                 transition: "all 0.4s ease",
                                 "&:hover": {
-                                boxShadow: "0px 0px 40px 20px rgba(185, 114, 187, 1)",
+                                    boxShadow: "0px 0px 40px 20px rgba(185, 114, 187, 1)",
+                                    color: "#fff"
                                 },
                             }}
                             >
                             ABOUT
                             </Button>
                         </Box>
-                    </Link>
                     
                 </Container>
             </ThemeProvider>
