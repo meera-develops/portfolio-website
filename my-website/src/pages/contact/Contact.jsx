@@ -153,6 +153,14 @@ export default function Contact() {
               >
                 Contact Me:
               </Typography>
+              <Typography variant="body2"
+                textAlign="center"
+                sx={{
+                  mt: 1
+                }}
+              >
+                Let's work together! Feel free to reach out with project ideas or potential work opportunities.
+              </Typography>
 
               <TextField
                 label="name"
