@@ -277,7 +277,7 @@ export default function Contact() {
                   className="button"
                   type="submit"
                   sx={{
-                    mt: { xs: 2, md: 3, lg: 4 },
+                    mt: { xs: 3, md: 3, lg: 4 },
                     mb: 5,
                     fontSize: { lg: "24px" },
                     alignItems: "center",

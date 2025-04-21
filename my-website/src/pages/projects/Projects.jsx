@@ -80,6 +80,8 @@ function Projects() {
                             marginTop: { xs: "2rem", lg: '0rem'}
                         }}>  
                             <Button
+                            component={Link}
+                            to="/about"
                             variant="contained"
                             size="large"
                             className="button"

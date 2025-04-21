@@ -2,7 +2,7 @@ import Figma from "../assets/img/skills/figma.png";
 import Canva from "../assets/img/skills/canva.svg";
 import Phone from "../assets/img/skills/mobile.svg";
 import React from "../assets/img/skills/react.svg";
-import Github from "../assets/img/skills/github.svg";
+import Bootstrap from "../assets/img/skills/bootstrap.svg";
 import PHP from "../assets/img/skills/php.svg";
 import Adobe from "../assets/img/skills/adobe.svg";
 import MaterialUI from "../assets/img/skills/mui.svg";
@@ -42,8 +42,8 @@ const theSkills = [
     },
     {
         "id": 7,
-        "label": "Git + GitHub",
-        "image": Github
+        "label": "WordPress",
+        "image": WordPress
     },
     {
         "id": 8,
@@ -52,9 +52,9 @@ const theSkills = [
     },
     {
         "id": 9,
-        "label": "WordPress",
-        "image": WordPress
-    }
+        "label": "Bootstrap",
+        "image": Bootstrap
+    },
     
 ]
 
