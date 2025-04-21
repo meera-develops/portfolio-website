@@ -4,6 +4,7 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
+import { Analytics } from '@vercel/analytics/react';
 import Home from "./pages/home/Home";
 import Projects from "./pages/projects/Projects";
 import About from "./pages/about/About";
@@ -22,6 +23,7 @@ function App() {
         flexDirection: 'column',
 
       }}>
+          <Analytics />
           <Router>
             <Navbar />
             <Routes>
