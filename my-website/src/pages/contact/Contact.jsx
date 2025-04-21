@@ -1,20 +1,12 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
-import {
-  Typography,
-  ThemeProvider,
-  Button,
-  Box,
-  Container,
-} from "@mui/material";
+import { Typography, ThemeProvider, Button, Box, Container } from "@mui/material";
 import TextField from "@mui/material/TextField";
 import theme from "../../theme";
 import MailIcon from "@mui/icons-material/Mail";
 import Snackbar from "@mui/material/Snackbar";
 import CloseIcon from "@mui/icons-material/Close";
 import IconButton from "@mui/material/IconButton";
-import Alert from "@mui/material/alert";
-import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 import * as Yup from "yup";
 
 const validationSchema = Yup.object({
@@ -25,6 +17,7 @@ const validationSchema = Yup.object({
 });
 
 export default function Contact() {
+  const [successMessage, setSuccessMessage] = useState(false);
   const [completed, setCompleted] = useState(false);
 
   const [formValues, setFormValues] = useState({
@@ -44,6 +37,7 @@ export default function Contact() {
       return;
     }
     setCompleted(false);
+    setSuccessMessage(false);
   };
 
   const action = (
@@ -111,6 +105,7 @@ export default function Contact() {
             feedback: "",
           }); 
           setErrors({}); 
+          setSuccessMessage(true);
           // e.target.reset();
           //include alert or notifcation that the email was successfully sent
         },
@@ -255,6 +250,24 @@ export default function Contact() {
                 onClose={handleClose}
                 message="Email address copied"
                 action={action}
+                ContentProps={{
+                  sx: {
+                    backgroundColor: '#5155bd',
+                  },
+                }}
+              />
+
+              <Snackbar
+                open={successMessage}
+                autoHideDuration={3000}
+                onClose={handleClose}
+                message="Your form has been submitted successfully!"
+                action={action}
+                ContentProps={{
+                  sx: {
+                    backgroundColor: "green", // Ensures that the background color stays green
+                  },
+                }}
               />
 
               <Box textAlign="center">
