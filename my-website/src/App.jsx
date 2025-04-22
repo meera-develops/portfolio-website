@@ -5,6 +5,7 @@ import {
   Route,
 } from "react-router-dom";
 import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import Home from "./pages/home/Home";
 import Projects from "./pages/projects/Projects";
 import About from "./pages/about/About";
@@ -24,6 +25,7 @@ function App() {
 
       }}>
           <Analytics />
+          <SpeedInsights />
           <Router>
             <Navbar />
             <Routes>
