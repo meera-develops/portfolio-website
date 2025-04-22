@@ -19,7 +19,7 @@ export default function Footer() {
                     }}
                 >
                     <Typography variant="body2">
-                    © 2025 <a href="https://www.linkedin.com/in/meera-bhola/" target="_blank" rel="noopener no referrer" cursor="pointer">Meera Bhola</a> | Web Development Student
+                    © 2025 <a href="https://www.linkedin.com/in/meera-bhola/" target="_blank" rel="noopener no referrer" cursor="pointer">Meera Bhola</a> | Web Developer
                     </Typography>
 
                 </Box>

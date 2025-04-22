@@ -58,7 +58,7 @@ function Home() {
                 gutterBottom
                 className="overlay2"
               >
-                Front-end Developer
+                Front-End Developer
               </Typography>
               <Typography variant="body2">
                 Passionate web developer crafting responsive, <br />
