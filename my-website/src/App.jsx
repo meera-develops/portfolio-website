@@ -13,6 +13,7 @@ import Navbar from "./components/navbar";
 import Resume from "./pages/resume/Resume";
 import Contact from './pages/contact/Contact';
 import Footer from './components/Footer';
+import Scroll from './components/Scroll';
 
 function App() {
 
@@ -27,6 +28,7 @@ function App() {
           <Analytics />
           <SpeedInsights />
           <Router>
+            <Scroll />
             <Navbar />
             <Routes>
 
