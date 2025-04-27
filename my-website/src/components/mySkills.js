@@ -6,7 +6,7 @@ import Bootstrap from "../assets/img/skills/bootstrap.svg";
 import PHP from "../assets/img/skills/php.svg";
 import Adobe from "../assets/img/skills/adobe.svg";
 import MaterialUI from "../assets/img/skills/mui.svg";
-import WordPress from "../assets/img/skills/wordpress.svg";
+import Github from "../assets/img/skills/github.svg";
 
 
 const theSkills = [
@@ -42,8 +42,8 @@ const theSkills = [
     },
     {
         "id": 7,
-        "label": "WordPress",
-        "image": WordPress
+        "label": "Git + GitHub",
+        "image": Github
     },
     {
         "id": 8,
