@@ -91,7 +91,8 @@ function Home() {
           </Grid2>
 
           <Box sx={{ 
-            mt: { sm: 3, md: 1, } 
+            mt: { sm: 3, md: 1, },
+            overflowX: 'hidden',
             }}>
 
             <Box
