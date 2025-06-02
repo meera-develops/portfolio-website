@@ -41,17 +41,17 @@ function About() {
                     </Box>
                     <Box>
                         <Typography variant="body2">
-                            I’m Meera Bhola, a fourth-year web development student at UCF. After discovering my passion for coding in college, I’ve developed skills in web design, HTML, CSS, JavaScript, PHP, mobile development, and their respective frameworks.
+                            I’m Meera Bhola, a fourth-year web development student at UCF. After discovering my passion for coding in college, I’ve developed skills in web design, HTML, CSS, JavaScript, PHP, mobile development, and more.
                         </Typography>
                                 <br></br>
-                        <Typography variant="body2">
+                        {/* <Typography variant="body2">
                             I have a desire to know more and get to the bottom of things. This has led me to great success in professional and academic life. Skilled in web design and web development, I am passionate about creating user-centered web applications that scale well. My academic background has prepared me for a variety of work-case situations. 
-                        </Typography>
+                        </Typography> */}
                                 <br></br>
                         <Typography variant="body2">
                             When I’m not coding, designing, or doing schoolwork, you’ll find me with friends or exploring hobbies. I’m always open to collaborating on projects and learning new skills. Feel free to contact me using the button above!
                                 <br></br><br></br>
-                            Below are some of the core technologies I use regularly:
+                            <strong>Below are some of the core technologies I use regularly:</strong>
                         </Typography>
 
                         <Typography variant="h3"
