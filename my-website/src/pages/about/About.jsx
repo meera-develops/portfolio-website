@@ -51,7 +51,7 @@ function About() {
                         <Typography variant="body2">
                             When I’m not coding, designing, or doing schoolwork, you’ll find me with friends or exploring hobbies. I’m always open to collaborating on projects and learning new skills. Feel free to contact me using the button above!
                                 <br></br><br></br>
-                            <strong>Below are some of the core technologies I use regularly:</strong>
+                            
                         </Typography>
 
                         <Typography variant="h3"
@@ -67,9 +67,15 @@ function About() {
                             >
                                 Skills
                             </Typography>
+
+                            <Typography variant="body2">
+                                <strong>Below are some of the core technologies I use regularly:</strong><br></br>
+                                <br></br>
+                            </Typography>
                     </Box>
                     
                     {/* see if you change alignment of skills here */}
+                    {/* could make the icons spin upon hover, could make them link to their respective sites */}
                     <Grid2 container spacing={12} justifyContent="center">
                         {skills.map(skill => (
                             <Grid2 item={+true} key={skill.id} xs={12} md={6} lg={4}>

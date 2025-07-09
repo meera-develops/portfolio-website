@@ -254,7 +254,7 @@ export default function Contact() {
               </Typography>
               <Snackbar
                 open={completed}
-                autoHideDuration={4000}
+                autoHideDuration={3250}
                 onClose={handleClose}
                 message="Email address copied"
                 action={action}
