@@ -24,10 +24,10 @@ function Navbar() {
         <>
             <AppBar position="static" width="100%" sx={{ backgroundColor: 'transparent', marginTop: '3%'}}>
                 <Toolbar>
-                    <Link to="/" sx={{display: {xs: 'none', sm: 'none', md:'flex'}}} aria-label='logo'>
+                    <Link to="/" sx={{display: {xs: 'none', sm: 'none', md:'flex'}}} aria-label='home'>
                         <img
                         src={mb}
-                        alt="pink circle logo with letters MB on it"
+                        alt=""
                         style={{ width: 60, height: 60, marginRight: 10,}}
                         className='logo'
                         />
@@ -39,6 +39,7 @@ function Navbar() {
                                 target="_blank"
                                 rel="noopener"
                                 color="inherit"
+                                aria-label="Meera's LinkedIn Profile"
                                 sx={{ display: 'flex', 
                                     alignItems: 'center ',
                                     transition: 'all 0.3s ease', 
@@ -57,6 +58,7 @@ function Navbar() {
                                 target="_blank"
                                 color="inherit"
                                 rel="noopener"
+                                aria-label="Meera's Github Profile"
                                 sx={{ display: 'flex', 
                                     alignItems: 'center',
                                     transition: 'all 0.3s ease', 
