@@ -3,6 +3,8 @@ import PictureAsPdfIcon from '@mui/icons-material/PictureAsPdf';
 import theme from '../../theme';
 import { ThemeProvider } from '@emotion/react';
 
+//create .pdf in html so screenreaders can read it 
+
 function Resume() {
     return (
         <>
