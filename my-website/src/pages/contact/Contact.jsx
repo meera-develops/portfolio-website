@@ -168,7 +168,7 @@ export default function Contact() {
               </Box>
 
               <Typography
-                variant="h3"
+                variant="h3" component="h1"
                 sx={{
                   textAlign: "center",
                   textShadow: `
@@ -181,7 +181,7 @@ export default function Contact() {
               >
                 Contact Me:
               </Typography>
-              <Typography variant="body2"
+              <Typography variant="body2" component="h2"
                 textAlign="center"
                 sx={{
                   mt: 1
@@ -260,7 +260,7 @@ export default function Contact() {
               />
 
               <Typography
-                variant="body2"
+                variant="body2" component="h2"
                 sx={{
                   mt: 3,
                   textAlign: "center",

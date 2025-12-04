@@ -27,6 +27,7 @@ function Projects() {
                             <img src={laptop} alt="laptop icon with image of website design inside"></img>
                             <Typography
                                 variant="body3"
+                                component="p"
                                 sx={{ 
                                     alignSelf: 'center', 
                                     filter: "drop-shadow(0px 0px 11px rgba(255, 255, 255, 1))",
@@ -40,7 +41,7 @@ function Projects() {
                     
                     <Box sx={{ ml: 5, mb: 5 }}> 
                         <Stack direction="row">
-                            <Typography variant="h3" component="h3"
+                            <Typography variant="h3" component="h1"
                             sx={{
                                 marginTop: { xs: '40px', md: '50px', },
                                 filter: "drop-shadow(20px 0px 40px rgba(185, 114, 187, 0.8))",

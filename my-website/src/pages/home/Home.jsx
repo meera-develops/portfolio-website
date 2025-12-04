@@ -46,7 +46,8 @@ function Home() {
                 Meera Bhola
               </Typography>
               <Typography
-                variant="h2"
+                variant="h2" 
+                component="h2"
                 style={{ fontFamily: "Tomorrow Medium" }}
                 className="overlay2"
               >
@@ -60,7 +61,7 @@ function Home() {
               >
                 Front-End Developer
               </Typography>
-              <Typography variant="body2">
+              <Typography variant="body2" component="p">
                 Passionate web developer crafting responsive, <br />
                 user-centered websites leveraging modern technologies
               </Typography>
