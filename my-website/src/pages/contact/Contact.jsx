@@ -55,6 +55,11 @@ export default function Contact() {
 
   const form = useRef();
 
+  const nameRef = useRef();
+  const emailRef = useRef();
+  const subjectRef = useRef();
+  const messageRef = useRef();
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormValues({
@@ -80,14 +85,22 @@ export default function Contact() {
     e.preventDefault();
 
     const formErrors = await validateForm();
+    console.log(formErrors)
 
     if (Object.keys(formErrors).length > 0) {
       setErrors(formErrors);
       //set focus to first error found 
-      // const firstErrorField = Object.keys(formErrors)[0];
-      // const el = document.getElementById(firstErrorField);
-      // if (el) el.focus();
-
+      setTimeout(() =>{
+        if (formErrors.user_name && nameRef.current) {
+          nameRef.current.focus();
+        } else if (formErrors.user_email && emailRef.current) {
+          emailRef.current.focus();
+        } else if (formErrors.user_subject && subjectRef.current) {
+          subjectRef.current.focus(); 
+        } else if (formErrors.feedback && messageRef.current) {
+          messageRef.current.focus()
+        }
+      }, 50)
       return;
     }
 
@@ -187,6 +200,7 @@ export default function Contact() {
                 onChange={handleChange}
                 error={!!errors.user_name}
                 helperText={errors.user_name || ""}
+                inputRef={nameRef}
                 // required
                 sx={{
                   backgroundColor: "white",
@@ -203,6 +217,7 @@ export default function Contact() {
                 onChange={handleChange}
                 error={!!errors.user_email}
                 helperText={errors.user_email || ""}
+                inputRef={emailRef}
                 sx={{
                   backgroundColor: "white",
                 }}
@@ -219,6 +234,7 @@ export default function Contact() {
                 onChange={handleChange}
                 error={!!errors.user_subject}
                 helperText={errors.user_subject || ""}
+                inputRef={subjectRef}
                 sx={{
                   backgroundColor: "white",
                 }}
@@ -240,6 +256,7 @@ export default function Contact() {
                 }}
                 error={!!errors.feedback}
                 helperText={errors.feedback || ""}
+                inputRef={messageRef}
               />
 
               <Typography
