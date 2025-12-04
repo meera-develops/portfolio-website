@@ -1,4 +1,4 @@
-import Figma from "../assets/img/skills/figma.png";
+import Figma from "../assets/img/skills/figma.svg";
 import Canva from "../assets/img/skills/canva.svg";
 import Phone from "../assets/img/skills/mobile.svg";
 import React from "../assets/img/skills/react.svg";

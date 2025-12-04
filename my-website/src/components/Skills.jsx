@@ -10,7 +10,9 @@ export default function Skills({ skill }) {
                 alignItems="center"
                 // mx={2}
             >
+                {/* change this to be not a Fab so that SR doesn't read it as button */}
                 <Fab
+                    aria-label={skill.label}
                     sx={{
                         width: 150,
                         height: 150,
@@ -21,6 +23,7 @@ export default function Skills({ skill }) {
                 >
                     <img 
                         src={skill.image}
+                        alt=""
                         style={{
                             width: '50%', height: '50%'
 
