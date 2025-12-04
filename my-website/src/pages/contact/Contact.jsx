@@ -83,6 +83,11 @@ export default function Contact() {
 
     if (Object.keys(formErrors).length > 0) {
       setErrors(formErrors);
+      //set focus to first error found 
+      // const firstErrorField = Object.keys(formErrors)[0];
+      // const el = document.getElementById(firstErrorField);
+      // if (el) el.focus();
+
       return;
     }
 
@@ -139,6 +144,16 @@ export default function Contact() {
             }}
           >
             <form ref={form} onSubmit={sendEmail}>
+              <Box aria-live="assertive" role="alert" 
+              sx={{
+                position: "absolute",
+                width: '1px',
+                height: '1px',
+                clip: "rect(0,0,0,0)", 
+              }}>
+                {Object.keys(errors).length > 0 && Object.values(errors).join(". ")}
+              </Box>
+
               <Typography
                 variant="h3"
                 sx={{
