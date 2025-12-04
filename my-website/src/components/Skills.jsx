@@ -12,7 +12,7 @@ export default function Skills({ skill }) {
             >
                 {/* change this to be not a Fab so that SR doesn't read it as button */}
                 <Fab
-                    aria-label={skill.label}
+                    aria-label={`${skill.label} logo`}
                     sx={{
                         width: 150,
                         height: 150,
@@ -31,6 +31,7 @@ export default function Skills({ skill }) {
                     />
                 </Fab>
                 <Typography
+                    aria-hidden="true"
                     sx={{
                         mt: 2,
                         textAlign: 'center',

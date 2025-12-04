@@ -61,8 +61,11 @@ function Home() {
               >
                 Front-End Developer
               </Typography>
-              <Typography variant="body2" component="p">
-                Passionate web developer crafting responsive, <br />
+              <Typography 
+              variant="body2" 
+              component="p" 
+              sx={{ whiteSpace: 'pre-line'}}>
+                Passionate web developer crafting responsive, {'\n'}
                 user-centered websites leveraging modern technologies
               </Typography>
             </Grid2>
