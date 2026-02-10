@@ -17,7 +17,7 @@ const projects = [
             "alt": "image of character gallery from website",
             "software": "BootStrap CSS + Phaser.js",
             "skills": "HTML/CSS/Javascript",
-            "url": "https://beautiful-custard-42380e.netlify.app/",
+            "url": "https://gotham-site.netlify.app/",
         },
         {
             "id": "2",
