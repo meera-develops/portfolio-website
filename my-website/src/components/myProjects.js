@@ -78,7 +78,7 @@ const projects = [
             "alt": "Image of Dragon curled in a circle with a sword going through it featuring the title 'KNIGHT HACKS' to the right of it. Logo is transparent and features a neon purple glow outline around it.",
             "software": "Adobe Illustrator",
             "skills": "Graphic Design",
-            "url": "https://www.linkedin.com/in/meera-bhola/details/projects/1359116227/multiple-media-viewer/?profileId=ACoAAD4U-YcBdPSxdtJn0IxG7Z5uaxQQw-FiL7I&treasuryMediaId=1737778073306",
+            "url": "https://www.linkedin.com/in/meera-bhola/overlay/Project/1359116227/treasury/?profileId=ACoAAD4U-YcBdPSxdtJn0IxG7Z5uaxQQw-FiL7I",
         }
 ];
 
