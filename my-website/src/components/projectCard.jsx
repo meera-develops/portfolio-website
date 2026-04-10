@@ -138,6 +138,9 @@ export default function ProjectCard({ project }) {
                                     fontWeight: '700',
                                     borderRadius: '20px',
                                     borderWidth: '1.8px',
+                                    color: '#262626',
+                                    backgroundColor: '#AEA5D4',
+
                                 }}
                             >
                                 {project.date}
@@ -150,6 +153,8 @@ export default function ProjectCard({ project }) {
                                     fontWeight: '700',
                                     borderRadius: '20px',
                                     borderWidth: '1.8px',
+                                    color: '#262626',
+                                    backgroundColor: '#AEA5D4',
 
                                 }}
                             >
@@ -162,6 +167,9 @@ export default function ProjectCard({ project }) {
                                     fontWeight: '700',
                                     borderRadius: '20px',
                                     borderWidth: '1.8px',
+                                    color: '#262626',
+                                    backgroundColor: '#AEA5D4',
+
                                 }}
                             >
                                 {project.software}

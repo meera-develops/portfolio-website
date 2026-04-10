@@ -7,53 +7,54 @@ import PHP from "../assets/img/skills/php.svg";
 import Adobe from "../assets/img/skills/adobe.svg";
 import MaterialUI from "../assets/img/skills/mui.svg";
 import Github from "../assets/img/skills/github.svg";
+import Supabase from "../assets/img/skills/supabase.svg";
 
 
 const theSkills = [
     {
-        "id": "1",
+        "id": 1,
         "label": "Figma",
         "image": Figma,
     },
     {
-        "id": "2",
-        "label": "Canva",
-        "image": Canva
-    },
-    {
-        "id": 3,
-        "label": "Mobile Development",
-        "image": Phone
-    },
-    {
-        "id": 4,
+        "id": 2,
         "label": "React + React Native",
         "image": React
     },
     {
-        "id": 5,
+        "id": 3,
         "label": "Material UI",
         "image": MaterialUI
     },    
     {
-        "id": 6,
-        "label": "PHP",
-        "image": PHP
+        "id": 4,
+        "label": "Canva",
+        "image": Canva
     },
     {
-        "id": 7,
+        "id": 5,
         "label": "Git + GitHub",
         "image": Github
     },
     {
+        "id": 6,
+        "label": "Supabase + SQL",
+        "image": Supabase
+    },
+    {
+        "id": 7,
+        "label": "PHP",
+        "image": PHP
+    },
+    {
         "id": 8,
-        "label": "Adobe Creative",
-        "image": Adobe
+        "label": "Bootstrap",
+        "image": Bootstrap
     },
     {
         "id": 9,
-        "label": "Bootstrap",
-        "image": Bootstrap
+        "label": "Adobe Creative",
+        "image": Adobe
     },
     
 ]

@@ -42,17 +42,14 @@ function About() {
                         </Box>
                         <Box>
                             <Typography variant="body2" component="p">
-                                I’m Meera Bhola, a fourth-year web development student at UCF. After discovering my passion for coding freshmen year, I’ve developed skills in web design, HTML, CSS, JavaScript, PHP, mobile development, and more.
+                                I’m Meera Bhola, a fourth-year web development student at UCF. After discovering my passion for coding freshmen year, I’ve developed skills in web design, web development, and even mobile production. I've worked with technologies across the stack and frameworks alike.
                             </Typography>
                                     <br></br>
-                            {/* <Typography variant="body2">
-                                I have a desire to know more and get to the bottom of things. This has led me to great success in professional and academic life. Skilled in web design and web development, I am passionate about creating user-centered web applications that scale well. My academic background has prepared me for a variety of work-case situations. 
-                            </Typography> */}
                                     <br></br>
                             <Typography variant="body2" component="p" sx={{
                                 marginBottom: 2
                             }}>
-                                When I’m not coding, designing, or doing schoolwork, you’ll find me with friends or exploring hobbies. I’m always open to collaborating on projects and learning new skills. Feel free to contact me using the button above!
+                                When I’m not working, you might find me baking something new or training for a race. I’m always open to collaborating on projects and learning new skills. Feel free to contact me using one of the buttons here!
                             </Typography>
 
                             <Typography variant="h3" component="h2"
