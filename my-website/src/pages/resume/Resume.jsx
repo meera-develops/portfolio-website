@@ -20,7 +20,7 @@ function Resume() {
                     >
                         <Box
                             component="embed"
-                            src="/meera_bhola_resume.pdf"
+                            src="/meera_bhola_li.pdf"
                             sx={{
                                 width: '80%',
                                 height: '800px',
